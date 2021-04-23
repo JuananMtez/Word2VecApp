@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthenticationService } from 'src/app/Auth/authentication.service';
-import { Usuario } from 'src/app/Entities/Usuario';
+import { AuthenticationService } from 'app/Auth/authentication.service';
+import { Usuario } from 'app/Entities/Usuario';
 
 @Component({
   selector: 'app-estadisticas',

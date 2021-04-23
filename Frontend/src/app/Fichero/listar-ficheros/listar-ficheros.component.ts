@@ -1,8 +1,8 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
-import { AuthenticationService } from 'src/app/Auth/authentication.service';
-import { Fichero } from 'src/app/Entities/Fichero';
-import { Usuario } from 'src/app/Entities/Usuario';
+import { Fichero } from 'app/Entities/Fichero';
+import { AuthenticationService } from 'app/Auth/authentication.service';
+import { Usuario } from 'app/Entities/Usuario';
 import { FicheroService } from '../fichero.service';
 
 @Component({
@@ -32,6 +32,8 @@ export class ListarFicherosComponent implements OnInit {
     })
 
 
+
+    //Prueba
     this.usuario = this.authService.currentUserValue;
     this.usuario.peticionesSoporteFront++;
 
