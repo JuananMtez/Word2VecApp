@@ -1,0 +1,41 @@
+<div class="container-sm">
+  <div class="card">
+    <div class="card-header mt-3">
+      <h3>Ficheros subidos</h3>
+    </div>
+    <div class="card-body">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th class="text-center">Nombre</th>
+            <th class="text-center">FID</th>
+            <th class="text-center">Veces leído</th>
+            <th class="text-center">Acción</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let fichero of ficheros" class="text-center">
+            <td class="text-center">{{fichero.fileName}}</td>
+            <td class="text-center">{{fichero.fid}}</td>
+            <td class="text-center">{{fichero.vecesLeido}}</td>
+            <td>
+              <button *ngIf="!hayEntrenamiento(fichero)"class="btn btn-outline-secondary mr-2">Entrenar</button>
+              <button *ngIf="hayEntrenamiento(fichero)"class="btn btn-outline-secondary mr-2">Ver Entrenamiento</button>
+
+              <button (click)="verContenidoFichero(fichero)" class="btn btn-outline-primary mr-2">Ver Contenido</button>
+              <button (click)="eliminarFichero(fichero)" class="btn btn-outline-danger">Eliminar</button>
+
+            </td>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="mt-5 ml-4">
+  <input #fileInput type="file" class="file-upload" (change)="handleFileInput($event.target.files)" accept=".txt">
+
+</div>
+
+<button (click)="uploadFile()" class="btn btn-outline-secondary ml-2 btn-sm mt-3 ml-4">Subir</button>
+

@@ -1,0 +1,23 @@
+<div class="modal-dialog align-middle " role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h1 class="modal-title" id="exampleModalLabel"><b>Inicio de sesión</b></h1>
+    </div>
+    <div class="modal-body">
+      <form (keydown)="keyDownFunction($event)">
+        <div class="form-group">
+          <input type="text" [(ngModel)]=loginDto.user name="user" class="form-control" #user="ngModel" placeholder="Usuario" id="recipient-name">
+        </div>
+        <div class="form-group">
+          <input type="password"  [(ngModel)]=loginDto.password   name="password" #password="ngModel" class="form-control" placeholder="Contraseña" id="recipient-name">
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <button (click)="login()" type="button" class="btn btn-success btn-lg btn-block" data-dismiss="modal">Iniciar Sesión</button>
+    </div>
+    <div class ="divRegistro">
+      <p  type="button" class="registrarse" [routerLink]="['/register']" data-dismiss="modal">No tienes cuenta: Regístrate</p>
+    </div>
+  </div>
+</div>

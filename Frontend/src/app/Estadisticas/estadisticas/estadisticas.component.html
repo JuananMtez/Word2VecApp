@@ -1,0 +1,135 @@
+<div>
+  <div class="card">
+    <div class="card-header mt-3">
+      <h3>Estadísticas</h3>
+    </div>
+
+    <div class="card-body">
+
+      <h3 class="ml-4 mb-4" >Datos de {{usuario.user}}</h3>
+
+      <table class="table table-bordered">
+        <thead>
+
+          <tr>
+
+            <th  scope="col" class="text-center">Veces conectado</th>
+            <th  scope="col" class="text-center">Veces contraseña modificada</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+
+            <td class="text-center">{{usuario.vecesConectado}}</td>
+            <td class="text-center">{{usuario.vecesContrasenaModificada}}</td>
+
+          </tr>
+
+        </tbody>
+      </table>
+      <div class="mt-5">
+        <h3 class="ml-4 mb-4" >Peticiones</h3>
+        <table class="table table-bordered">
+          <thead>
+
+            <tr>
+              <th  scope="col" class="text-center">Backend (Soporte Front)</th>
+              <th  scope="col" class="text-center">Backend (Word2VecTrain)</th>
+              <th  scope="col" class="text-center">Backend (Word2VecUse)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-center">{{usuario.peticionesSoporteFront}}</td>
+              <td class="text-center">{{usuario.peticionesWord2VecTrain}}</td>
+              <td class="text-center">{{usuario.peticionesWord2VecUse}}</td>
+
+            </tr>
+
+          </tbody>
+        </table>
+
+      </div>
+      <div class="mt-5">
+        <h3 class="ml-4 mb-4" >Backend (Soporte Front)</h3>
+
+        <table class="table table-bordered">
+          <thead>
+
+            <tr>
+              <th  scope="col" class="text-center">Ficheros almacenados en el sistema</th>
+              <th  scope="col" class="text-center">Total ficheros subidos</th>
+
+
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-center">{{usuario.ficherosAlmacenadosActualmente}}</td>
+              <td class="text-center">{{usuario.ficherosSubidosTotalmente}}</td>
+
+            </tr>
+
+          </tbody>
+        </table>
+
+      </div>
+      <div class="mt-5">
+        <h3 class="ml-4 mb-4" >Backend Word2VecTrain</h3>
+
+        <table class="table table-bordered">
+          <thead>
+
+            <tr>
+
+              <th  scope="col" class="text-center">Entrenamientos realizados</th>
+
+
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+
+              <td class="text-center">{{usuario.entrenamientosHechos}}</td>
+
+
+            </tr>
+
+          </tbody>
+        </table>
+
+      </div>
+      <div class="mt-5">
+        <h3 class="ml-4 mb-4" >Backend Word2VecUse</h3>
+
+        <table class="table table-bordered">
+          <thead>
+
+            <tr>
+
+              <th  scope="col" class="text-center">Palabras consultadas</th>
+
+
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+
+              <td class="text-center">{{usuario.palabrasConsultadas}}</td>
+
+
+            </tr>
+
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+

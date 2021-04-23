@@ -1,0 +1,22 @@
+input:invalid {
+  border: 2px dashed gray;
+}
+button {
+  margin-right: 20px;
+  vertical-align: text-top;
+}
+
+.divRegistro{
+  text-align:center;
+
+}
+
+.registrarse {
+
+  cursor: pointer;
+}
+
+.registrarse:hover{
+  color: blue;
+}
+
