@@ -26,7 +26,7 @@ export class ModificarUsuarioComponent implements OnInit {
 
   }
 
-
+//d
   modificar() {
 
     if (this.usuarioPut.password == "") {
