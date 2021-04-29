@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { UsuarioRegister } from 'src/app/DTOs/UsuarioRegister';
-import { Usuario } from 'src/app/Entities/Usuario';
-import { UsuarioService } from 'src/app/Usuario/usuario.service';
+import { UsuarioRegister } from 'app/DTOs/UsuarioRegister';
+import { UsuarioService } from 'app/Usuario/usuario.service';
 import { AuthenticationService } from '../authentication.service';
 
 @Component({

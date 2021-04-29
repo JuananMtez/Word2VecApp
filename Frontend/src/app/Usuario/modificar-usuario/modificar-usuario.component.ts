@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { AuthenticationService } from 'src/app/Auth/authentication.service';
-import { UsuarioPut } from 'src/app/DTOs/UsuarioPut';
-import { Usuario } from 'src/app/Entities/Usuario';
+import { AuthenticationService } from 'app/Auth/authentication.service';
+import { UsuarioPut } from 'app/DTOs/UsuarioPut';
+import { Usuario } from 'app/Entities/Usuario';
 import { UsuarioService } from '../usuario.service';
 
 @Component({

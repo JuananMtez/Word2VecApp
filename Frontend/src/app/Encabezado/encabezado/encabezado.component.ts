@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { AuthenticationService } from 'src/app/Auth/authentication.service';
-import { UsuarioService } from 'src/app/Usuario/usuario.service';
+import { AuthenticationService } from 'app/Auth/authentication.service';
+import { UsuarioService } from 'app/Usuario/usuario.service';
 
 @Component({
   selector: 'app-encabezado',

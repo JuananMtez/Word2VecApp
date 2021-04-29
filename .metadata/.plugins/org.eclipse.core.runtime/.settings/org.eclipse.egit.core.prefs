@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 GitRepositoriesView.GitDirectories=
 GitRepositoriesView.GitDirectories.relative=
+=======
+GitRepositoriesView.GitDirectories=C\:\\Users\\Juanan\\git\\proyecto-ssdd-word2vec\\.git;
+GitRepositoriesView.GitDirectories.relative=C\:\\Users\\Juanan\\git\\proyecto-ssdd-word2vec\\.git;
+>>>>>>> branch 'master' of https://gitlab.com/martinezlopezjuanantonio/proyecto-ssdd-word2vec.git
 core_autoIgnoreDerivedResources=false
 eclipse.preferences.version=1
