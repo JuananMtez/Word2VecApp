@@ -57,6 +57,8 @@ public class Controller {
 */
 	
 
+	//asas
+	
 	@GetMapping("/{id}")
 	public ResponseEntity<UsuarioResponse> getUsuario(@PathVariable("id") String id) {
 		
