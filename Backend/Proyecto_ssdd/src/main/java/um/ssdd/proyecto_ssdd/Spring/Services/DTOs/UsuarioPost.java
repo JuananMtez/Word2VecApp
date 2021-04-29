@@ -13,6 +13,7 @@ public class UsuarioPost implements Serializable {
 	private String password;
 	private String nombre;
 	private String apellidos;
+	private String correoElectronico;
 
 	
 	
@@ -50,6 +51,15 @@ public class UsuarioPost implements Serializable {
 		this.apellidos = apellidos;
 	}
 
+
+	
+	public String getCorreoElectronico() {
+		return correoElectronico;
+	}
+
+	public void setCorreoElectronico(String correoElectronico) {
+		this.correoElectronico = correoElectronico;
+	}
 
 	public static long getSerialversionuid() {
 		return serialVersionUID;

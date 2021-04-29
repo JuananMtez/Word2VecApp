@@ -20,6 +20,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import um.ssdd.proyecto_ssdd.Spring.Services.FicheroService;
 import um.ssdd.proyecto_ssdd.Spring.Services.UsuarioService;
+import um.ssdd.proyecto_ssdd.Spring.Services.DTOs.CodigoDTO;
 import um.ssdd.proyecto_ssdd.Spring.Services.DTOs.FicheroDTO;
 import um.ssdd.proyecto_ssdd.Spring.Services.DTOs.UsuarioLogin;
 import um.ssdd.proyecto_ssdd.Spring.Services.DTOs.UsuarioPost;
@@ -57,8 +58,6 @@ public class Controller {
 */
 	
 
-	//asas
-	
 	@GetMapping("/{id}")
 	public ResponseEntity<UsuarioResponse> getUsuario(@PathVariable("id") String id) {
 		
@@ -121,6 +120,19 @@ public class Controller {
 		return ResponseEntity.notFound().build();
 	}
 	
+	
+	@PostMapping("code")
+	public ResponseEntity<String> checkConfirmationCode(@RequestBody CodigoDTO codigoDTO) {
+		
+		if (usuarioService.checkCode(codigoDTO))
+			return ResponseEntity.ok().build();
+		
+		
+		return ResponseEntity.notFound().build();
+		
+		
+		
+	}
 	
 /*
 	  _

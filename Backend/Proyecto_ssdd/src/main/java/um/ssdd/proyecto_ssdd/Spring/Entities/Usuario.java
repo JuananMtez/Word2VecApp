@@ -25,7 +25,11 @@ public class Usuario {
 	
 	private String token;
 	
+	private String correoElectronico;
+	
 	private List<Fichero> ficheros;
+	
+	
 	
 	
 	
@@ -45,9 +49,12 @@ public class Usuario {
 	private int palabrasConsultadas; 
 	private int entrenamientosHechos;
 	
+	private String codigoConfirmación;
+	private boolean confirmado;
+	
 	
 
-	public Usuario(String user, String password, String nombre, String apellidos, String token) {
+	public Usuario(String user, String password, String nombre, String apellidos, String token, String correoElectronico) {
 		this.user = user;
 		this.password = password;
 		this.nombre = nombre;
@@ -66,6 +73,13 @@ public class Usuario {
 		vecesContrasenaModificada = 0;
 		palabrasConsultadas = 0;
 		entrenamientosHechos = 0;
+		
+		codigoConfirmación = null;
+		
+		this.correoElectronico = correoElectronico;
+		
+		confirmado = false;
+		
 		
 		
 	}
@@ -229,6 +243,14 @@ public class Usuario {
 		}
 	}
 	
+	public String getCorreoElectronico() {
+		return correoElectronico;
+	}
+
+	public void setCorreoElectronico(String correoElectronico) {
+		this.correoElectronico = correoElectronico;
+	}
+
 	public void addConexión() {
 		this.vecesConectado++;
 	}
@@ -253,6 +275,26 @@ public class Usuario {
 	public void addVecesContrasenaModificada() {
 		this.vecesContrasenaModificada++;
 	}
+
+	public String getCodigoConfirmación() {
+		return codigoConfirmación;
+	}
+
+	public void setCodigoConfirmación(String codigoConfirmación) {
+		this.codigoConfirmación = codigoConfirmación;
+	}
+
+	public boolean isConfirmado() {
+		return confirmado;
+	}
+
+	public void setConfirmado(boolean confirmado) {
+		this.confirmado = confirmado;
+	}
+	
+	
+	
+	
 	
 	
 

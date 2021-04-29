@@ -1,7 +1,24 @@
 package um.ssdd.proyecto_ssdd.Spring.Services;
 
+import java.io.IOException;
+import java.security.SecureRandom;
 import java.util.List;
+import java.util.Properties;
 import java.util.stream.Collectors;
+
+import javax.mail.Authenticator;
+import javax.mail.BodyPart;
+import javax.mail.Message;
+import javax.mail.MessagingException;
+import javax.mail.Multipart;
+import javax.mail.PasswordAuthentication;
+import javax.mail.Session;
+import javax.mail.Transport;
+import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeBodyPart;
+import javax.mail.internet.MimeMessage;
+import javax.mail.internet.MimeMultipart;
+
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -10,10 +27,13 @@ import um.ssdd.proyecto_ssdd.Spring.Entities.Fichero;
 import um.ssdd.proyecto_ssdd.Spring.Entities.Usuario;
 import um.ssdd.proyecto_ssdd.Spring.Repositories.IFicheroRepository;
 import um.ssdd.proyecto_ssdd.Spring.Repositories.IUsuarioRepository;
+import um.ssdd.proyecto_ssdd.Spring.Services.DTOs.CodigoDTO;
 import um.ssdd.proyecto_ssdd.Spring.Services.DTOs.UsuarioLogin;
 import um.ssdd.proyecto_ssdd.Spring.Services.DTOs.UsuarioPost;
 import um.ssdd.proyecto_ssdd.Spring.Services.DTOs.UsuarioPut;
 import um.ssdd.proyecto_ssdd.Spring.Services.DTOs.UsuarioResponse;
+
+
 
 @Service
 public class UsuarioService {
@@ -45,17 +65,79 @@ public class UsuarioService {
 	public UsuarioResponse post(UsuarioPost usuario) {
 
 		if (usuario.getUser() == null || usuario.getPassword() == null || usuario.getNombre() == null
-				|| usuario.getApellidos() == null)
+				|| usuario.getApellidos() == null || usuario.getCorreoElectronico() == null)
 			return null;
 
 		if (usuarioRepository.existsByUser(usuario.getUser()))
 			return null;
 
 
-		Usuario u = postToEntity(usuario);
-		u.addPeticionSoporteFront();
+		
+		
+		
+		Usuario u = enviarCorreo(usuario);
+
+		
 		return entityToResponse(usuarioRepository.save(u));
 
+	}
+	
+	private Usuario enviarCorreo(UsuarioPost usuario) {
+		
+		
+		Usuario u = postToEntity(usuario);
+		u.addPeticionSoporteFront();
+		
+		String host = "smtp.gmail.com";
+		String from = "ppcpracticas2020@gmail.com";
+		String password = "ppcpracticas";
+		String codigoConfirmacion = null;
+		
+		Properties props = System.getProperties();
+		
+		props.put("mail.smtp.host", host);
+		props.put("mail.smtp.port", "465");
+
+		props.put("mail.smtp.auth", "true");
+		props.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
+		
+		Authenticator auth = new Authenticator() {
+			protected PasswordAuthentication getPasswordAuthentication() {
+				return new PasswordAuthentication(from, password);
+			}
+		};
+		
+		Session session = Session.getInstance(props, auth);
+		MimeMessage message = new MimeMessage(session);
+
+		try {
+			
+			message.setFrom(new InternetAddress(from));
+			message.addRecipient(Message.RecipientType.TO, new InternetAddress(usuario.getCorreoElectronico()));
+			message.setSubject("Codigo confirmación Word2Vec");
+
+
+			
+			
+			SecureRandom random = new SecureRandom();
+			int num = random.nextInt(100000);
+			codigoConfirmacion = String.format("%05d", num);
+			
+			u.setCodigoConfirmación(codigoConfirmacion);
+
+			
+			message.setText("Codigo de confirmación: " + codigoConfirmacion);
+		    Transport.send(message);
+
+			
+		} catch (MessagingException me) {
+			me.printStackTrace(); // Si se produce un error
+			System.out.println("The email was not sent.");
+			System.out.println("Error message: " + me.getMessage());
+		}
+		
+		return u;
+		
 	}
 
 	public int put(String id, UsuarioPut usuario) {
@@ -136,13 +218,47 @@ public class UsuarioService {
 		Usuario u = usuarioRepository.findByUserPassword(usuario.getUser(), usuario.getPassword());
 
 		if (u != null) {
-			u.addConexión();
-			u.addPeticionSoporteFront();
-			usuarioRepository.save(u);
-			return entityToResponse(u);
+			
+			if (u.isConfirmado()) {
+			
+				u.addConexión();
+				u.addPeticionSoporteFront();
+				usuarioRepository.save(u);
+				return entityToResponse(u);
+				
+			} else
+				delete(u.getId());
+			
+			
 		}
+		
+		
+		
 		return null;
 
+		
+	}
+	
+	public boolean checkCode(CodigoDTO codigoDTO) {
+		
+		Usuario usuario = usuarioRepository.findByEmail(codigoDTO.getCorreoElectronico());
+		
+		if (usuario != null) {
+			
+			if (usuario.getCodigoConfirmación().equals(codigoDTO.getCodigoConfirmacion())) {
+				
+				usuario.setConfirmado(true);
+				usuario.addPeticionSoporteFront();
+				usuarioRepository.save(usuario);
+				return true;
+				
+			} else 
+				delete(usuario.getId());
+					
+		}
+		
+		
+		return false;
 		
 	}
 	

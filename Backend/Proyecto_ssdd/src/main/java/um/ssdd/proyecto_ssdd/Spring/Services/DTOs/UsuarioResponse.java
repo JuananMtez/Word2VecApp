@@ -12,6 +12,8 @@ public class UsuarioResponse implements Serializable {
 	private String apellidos;
 	private List<FicheroDTO> ficheros;
 	
+	private String correoElectronico;
+	
 	private int ficherosAlmacenadosActualmente;
 	private int ficherosSubidosTotalmente;
 	private int vecesConectado;
@@ -32,6 +34,14 @@ public class UsuarioResponse implements Serializable {
 		return id;
 	}
 	
+
+	public String getCorreoElectronico() {
+		return correoElectronico;
+	}
+
+	public void setCorreoElectronico(String correoElectronico) {
+		this.correoElectronico = correoElectronico;
+	}
 
 	public int getVecesContrasenaModificada() {
 		return vecesContrasenaModificada;
