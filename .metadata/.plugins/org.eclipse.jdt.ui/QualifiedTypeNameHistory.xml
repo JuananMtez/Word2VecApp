@@ -1,2 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="um.ssdd.proyecto_ssdd.Spring.Services.DTOs.CodigoDTO"/>
+    <fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
+    <fullyQualifiedTypeName name="java.util.Properties"/>
+    <fullyQualifiedTypeName name="javax.mail.Authenticator"/>
+    <fullyQualifiedTypeName name="javax.mail.PasswordAuthentication"/>
+    <fullyQualifiedTypeName name="javax.mail.Session"/>
+    <fullyQualifiedTypeName name="javax.mail.internet.MimeMessage"/>
+    <fullyQualifiedTypeName name="javax.mail.internet.InternetAddress"/>
+    <fullyQualifiedTypeName name="javax.mail.Message"/>
+    <fullyQualifiedTypeName name="javax.mail.BodyPart"/>
+    <fullyQualifiedTypeName name="java.security.SecureRandom"/>
+    <fullyQualifiedTypeName name="javax.mail.internet.MimeBodyPart"/>
+    <fullyQualifiedTypeName name="javax.mail.internet.MimeMultipart"/>
+    <fullyQualifiedTypeName name="javax.mail.Multipart"/>
+    <fullyQualifiedTypeName name="javax.mail.Transport"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="javax.mail.MessagingException"/>
+</qualifiedTypeNameHistroy>

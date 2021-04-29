@@ -1,0 +1,17 @@
+package um.ssdd.proyecto_ssdd.Spring.Services.DTOs;
+
+public class CodigoDTO {
+	
+	private String codigoConfirmación;
+
+	public String getCodigoConfirmación() {
+		return codigoConfirmación;
+	}
+
+	public void setCodigoConfirmación(String codigoConfirmación) {
+		this.codigoConfirmación = codigoConfirmación;
+	}
+	
+	
+
+}

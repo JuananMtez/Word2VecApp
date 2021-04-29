@@ -41,7 +41,7 @@ export class LoginComponent implements OnInit {
       this.router.navigate(["/inicio"]);
     },
     error => {
-      alert("Usuario o contraseña incorrectos");
+      alert("Posibles fallos: \n 1. Usuario o contraseña incorrectos.\n 2. El usuario no ha sido confirmado, vuelva a crearlo.");
     })
 
   }

@@ -20,5 +20,7 @@ export class Usuario {
 
   entrenamientosHechos: number;
 
+  correoElectronico: string;
+
 
 }

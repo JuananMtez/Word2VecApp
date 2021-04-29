@@ -18,6 +18,7 @@ import { ModificarUsuarioComponent } from './Usuario/modificar-usuario/modificar
 import { FicheroService } from './Fichero/fichero.service';
 import { EstadisticasComponent } from './Estadisticas/estadisticas/estadisticas.component';
 import { PerfilComponent } from './Usuario/perfil/perfil.component';
+import { CodeConfirmationComponent } from './Auth/code-confirmation/code-confirmation.component';
 
 
 
@@ -33,6 +34,7 @@ import { PerfilComponent } from './Usuario/perfil/perfil.component';
     ModificarUsuarioComponent,
     EstadisticasComponent,
     PerfilComponent,
+    CodeConfirmationComponent,
   ],
   imports: [
     BrowserModule,

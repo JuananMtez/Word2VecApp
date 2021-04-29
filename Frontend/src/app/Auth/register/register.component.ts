@@ -16,7 +16,8 @@ export class RegisterComponent implements OnInit {
     user: '',
     password: '',
     nombre: '',
-    apellidos: ''
+    apellidos: '',
+    correoElectronico: ''
   };
 
   constructor(private authService: AuthenticationService, private usuarioService: UsuarioService, private router: Router) {
@@ -33,11 +34,11 @@ export class RegisterComponent implements OnInit {
 
     this.usuarioService.register(this.usuarioRegister).subscribe(
       data =>{
-      alert("Usuario registrado correctamente")
-      this.router.navigate(['/login']);
+      this.usuarioService.setEmail(this.usuarioRegister.correoElectronico)
+      this.router.navigate(['/register/code']);
     },
     error =>{
-        alert("Nombre de usuario ya registrado")
+        alert("Correo o nombre de usuario ya registrado")
     })
   }
 

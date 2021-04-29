@@ -4,6 +4,7 @@ export interface UsuarioRegister {
   password: string,
   nombre: string,
   apellidos: string
+  correoElectronico: string;
 
 
 }

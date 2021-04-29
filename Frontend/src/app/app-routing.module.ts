@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CodeConfirmationComponent } from './Auth/code-confirmation/code-confirmation.component';
 import { LoginComponent } from './Auth/login/login.component';
 import { RegisterComponent } from './Auth/register/register.component';
 import { EstadisticasComponent } from './Estadisticas/estadisticas/estadisticas.component';
@@ -19,6 +20,8 @@ const routes: Routes = [
   { path: 'usuario/modificar', component: ModificarUsuarioComponent},
   { path: 'usuario/estadisticas', component: EstadisticasComponent},
   { path: 'usuario/perfil', component: PerfilComponent},
+  { path: 'register/code', component: CodeConfirmationComponent},
+
 
 ];
 
