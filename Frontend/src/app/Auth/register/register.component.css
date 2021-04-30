@@ -1,5 +1,8 @@
 
 input:invalid {
   border-color: red;
+}
 
+.form-group {
+  margin-bottom: 1px;
 }
