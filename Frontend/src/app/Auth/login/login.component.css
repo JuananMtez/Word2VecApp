@@ -1,5 +1,5 @@
 input:invalid {
-  border: 2px dashed gray;
+  border-color: red;
 }
 button {
   margin-right: 20px;

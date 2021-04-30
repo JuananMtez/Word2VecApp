@@ -5,12 +5,30 @@
     </div>
     <div class="modal-body">
       <form (keydown)="keyDownFunction($event)">
-        <div class="form-group">
+
+
+        <div *ngIf="!userError; else badUsuario"class="form-group">
           <input type="text" [(ngModel)]=loginDto.user name="user" class="form-control" #user="ngModel" placeholder="Usuario" id="recipient-name">
         </div>
-        <div class="form-group">
+
+        <ng-template #badUsuario>
+          <div class="form-group">
+            <input type="text" [(ngModel)]=loginDto.user name="user" class="form-control" #user="ngModel" placeholder="Usuario" id="recipient-name" required>
+          </div>
+        </ng-template>
+
+
+
+        <div *ngIf="!passwordError; else badContrasena"class="form-group">
           <input type="password"  [(ngModel)]=loginDto.password   name="password" #password="ngModel" class="form-control" placeholder="Contraseña" id="recipient-name">
         </div>
+
+        <ng-template #badContrasena>
+          <div class="form-group">
+            <input type="password"  [(ngModel)]=loginDto.password   name="password" #password="ngModel" class="form-control" placeholder="Contraseña" id="recipient-name" required>
+          </div>
+        </ng-template>
+
       </form>
     </div>
     <div class="modal-footer">

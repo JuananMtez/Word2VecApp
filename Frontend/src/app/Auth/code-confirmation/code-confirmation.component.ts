@@ -13,12 +13,14 @@ export class CodeConfirmationComponent implements OnInit {
 
 
   codeConfirmacion: CodigoDTO;
-
+  codigoError: boolean
+  email: string
 
 
   constructor(private usuarioService: UsuarioService, private router: Router) {
-
-    this.codeConfirmacion = new CodigoDTO(usuarioService.getEmail());
+    this.email = usuarioService.getEmail();
+    this.codeConfirmacion = new CodigoDTO(this.email);
+    this.codigoError = false;
 
   }
 
@@ -27,15 +29,23 @@ export class CodeConfirmationComponent implements OnInit {
 
 
   comprobarCodigo() {
-    this.usuarioService.checkCode(this.codeConfirmacion).subscribe(
-      data =>{
-      alert("Código confirmado")
-    },
-    error =>{
-        alert("El código de confirmación es erróneo")
-        alert("El usuario se ha elimiando")
-    })
-    this.router.navigate(['/inicio']);
+
+    if (this.codeConfirmacion.codigoConfirmacion != '') {
+      this.usuarioService.checkCode(this.codeConfirmacion).subscribe(
+        data =>{
+        alert("Código confirmado")
+      },
+      error =>{
+          alert("El código de confirmación es erróneo")
+          alert("El usuario se ha elimiando")
+      })
+      this.router.navigate(['/inicio']);
+
+    } else {
+
+      this.codigoError = true;
+    }
+
 
   }
 

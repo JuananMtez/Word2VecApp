@@ -18,9 +18,16 @@ export class LoginComponent implements OnInit {
     password: ''
   };
 
+  userError: boolean;
+  passwordError: boolean;
 
 
-  constructor(private authService: AuthenticationService, private router: Router) { }
+
+  constructor(private authService: AuthenticationService, private router: Router) {
+
+    this.userError = false;
+    this.passwordError = false;
+  }
 
   ngOnInit(): void {
 
@@ -35,14 +42,28 @@ export class LoginComponent implements OnInit {
 
 
   login() {
-    this.authService.login(this.loginDto)
-    .pipe(first())
-    .subscribe(data => {
-      this.router.navigate(["/inicio"]);
-    },
-    error => {
-      alert("Posibles fallos: \n 1. Usuario o contraseña incorrectos.\n 2. El usuario no ha sido confirmado, vuelva a crearlo.");
-    })
+
+    if (this.loginDto.user != '' && this.loginDto.password != '') {
+
+      this.authService.login(this.loginDto)
+      .pipe(first())
+      .subscribe(data => {
+        this.router.navigate(["/inicio"]);
+      },
+      error => {
+        alert("Posibles fallos: \n 1. Usuario o contraseña incorrectos.\n 2. El usuario no ha sido confirmado, vuelva a crearlo.");
+      })
+    } else {
+
+      if (this.loginDto.user == '') {
+        this.userError = true;
+      }
+
+      if (this.loginDto.password == '') {
+        this.passwordError= true;
+      }
+
+    }
 
   }
 

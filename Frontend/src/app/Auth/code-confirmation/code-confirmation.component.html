@@ -1,14 +1,23 @@
 <div class="modal-dialog" role="document">
   <div class="modal-content">
     <div class="modal-header">
-      <h2 class="modal-title" id="exampleModalLabel"><b>Introduce el código recibido en su correo electrónico</b></h2>
+      <h2 class="modal-title" id="exampleModalLabel"><b>Introduce el código recibido en {{email}}</b></h2>
     </div>
     <div class="modal-body">
       <form>
-        <div class="form-group">
+        <div *ngIf="!codigoError; else badCodigo"class="form-group">
           <label for="message-text" class="col-form-label">Código de Confirmación</label>
           <input  type="text" class="form-control"  id="recipient-name" [(ngModel)]=codeConfirmacion.codigoConfirmacion  name="codigoConfirmacion" #codigoConfirmacion="ngModel">
         </div>
+
+        <ng-template #badCodigo>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Código de Confirmación</label>
+            <input  type="text" class="form-control"  id="recipient-name" [(ngModel)]=codeConfirmacion.codigoConfirmacion  name="codigoConfirmacion" #codigoConfirmacion="ngModel" required>
+          </div>
+        </ng-template>
+
+
       </form>
     </div>
     <div class="modal-footer">
