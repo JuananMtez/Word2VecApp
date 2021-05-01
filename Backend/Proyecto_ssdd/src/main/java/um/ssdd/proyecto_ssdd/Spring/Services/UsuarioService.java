@@ -210,11 +210,16 @@ public class UsuarioService {
 		return false;
 	}
 
-	public UsuarioResponse login(UsuarioLogin usuario) {
+	
+	// 0 bad request
+	// 1 not found
+	// 2 codigo no confirmado
+	// 3 correcto
+	public int login(UsuarioLogin usuario) {
 
 		if (usuario.getUser() == null || usuario.getPassword() == null)
-			return null;
-
+			return 0;
+			
 		Usuario u = usuarioRepository.findByUserPassword(usuario.getUser(), usuario.getPassword());
 
 		if (u != null) {
@@ -224,17 +229,20 @@ public class UsuarioService {
 				u.addConexión();
 				u.addPeticionSoporteFront();
 				usuarioRepository.save(u);
-				return entityToResponse(u);
+				return 3;
+				//return entityToResponse(u);
 				
-			} else
+			} else {
+				
 				delete(u.getId());
-			
+				return 2;
+			}
 			
 		}
 		
 		
 		
-		return null;
+		return 1;
 
 		
 	}
@@ -260,6 +268,12 @@ public class UsuarioService {
 		
 		return false;
 		
+	}
+	
+	public UsuarioResponse getUsuario(UsuarioLogin usuarioLogin) {
+		
+		Usuario usuario = usuarioRepository.findByUserPassword(usuarioLogin.getUser(), usuarioLogin.getPassword());
+		return entityToResponse(usuario);
 	}
 	
 

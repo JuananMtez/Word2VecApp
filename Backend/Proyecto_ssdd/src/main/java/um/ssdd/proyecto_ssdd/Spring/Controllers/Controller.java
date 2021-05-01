@@ -149,11 +149,25 @@ public class Controller {
 	@PostMapping("/login")
 	public ResponseEntity<UsuarioResponse> loginUsuario(@RequestBody UsuarioLogin usuario) {
 		
-		UsuarioResponse user = usuarioService.login(usuario);
-		if (user == null)
-			return ResponseEntity.notFound().build();
 		
-		return ResponseEntity.ok(user);
+		switch (usuarioService.login(usuario)) {
+		
+		case 0:
+			return ResponseEntity.badRequest().build();
+			
+		case 1:
+			return ResponseEntity.notFound().build();
+			
+		case 2:
+			return ResponseEntity.status(401).build();
+			
+		case 3:
+			return ResponseEntity.ok(usuarioService.getUsuario(usuario));
+			
+		}
+		
+		
+		return null;
 
 	}
 
