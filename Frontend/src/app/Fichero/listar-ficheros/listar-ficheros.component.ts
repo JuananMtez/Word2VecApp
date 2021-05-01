@@ -33,7 +33,6 @@ export class ListarFicherosComponent implements OnInit {
 
 
 
-    //Prueba
     this.usuario = this.authService.currentUserValue;
     this.usuario.peticionesSoporteFront++;
 
