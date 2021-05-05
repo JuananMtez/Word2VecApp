@@ -12,7 +12,7 @@ public class FicheroDTO implements Serializable {
 	private String fileName;
 	private String vecesLeido;
 	
-	private String entrenamientoTID;
+	private String TID;
 
 	public String getFID() {
 		return FID;
@@ -50,13 +50,14 @@ public class FicheroDTO implements Serializable {
 		this.vecesLeido = vecesLeido;
 	}
 
-	public String getEntrenamientoTID() {
-		return entrenamientoTID;
+	public String getTID() {
+		return TID;
 	}
 
-	public void setEntrenamientoTID(String entrenamientoTID) {
-		this.entrenamientoTID = entrenamientoTID;
+	public void setTID(String tID) {
+		TID = tID;
 	}
+
 
 
 

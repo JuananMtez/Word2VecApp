@@ -232,5 +232,26 @@ public class Controller {
 		return ResponseEntity.notFound().build();
 		
 	}
+	
+	
+	// Entrenamiento
+	
+	@GetMapping("/{id}/train/{fid}")
+	public ResponseEntity<String> entrenarFichero(@PathVariable("id") String id, @PathVariable("fid") String fid) {
+		
+		URI uri = ficheroService.entrenar(id, fid);
+		
+		if (uri != null)
+			return ResponseEntity.created(uri).build();
+				
+		
+		return ResponseEntity.badRequest().build();
+			
+		
+		
+	}
+	
+	
+	
 
 }

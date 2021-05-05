@@ -14,6 +14,7 @@ public class Fichero {
 	
 	private String usuarioIdPropietario;
 	
+	private String TID;
 	private Entrenamiento entrenamiento;
 	
 	private int vecesLeido;
@@ -26,6 +27,7 @@ public class Fichero {
 		this.fileName = fileName;
 		this.vecesLeido = 0;
 		entrenamiento = null;
+		TID = "";
 	}
 	
 	public Fichero() {}
@@ -53,6 +55,16 @@ public class Fichero {
 
 	public void setUsuarioIdPropietario(String usuarioIdPropietario) {
 		this.usuarioIdPropietario = usuarioIdPropietario;
+	}
+	
+	
+
+	public String getTID() {
+		return TID;
+	}
+
+	public void setTID(String tID) {
+		TID = tID;
 	}
 
 	public String getFileName() {

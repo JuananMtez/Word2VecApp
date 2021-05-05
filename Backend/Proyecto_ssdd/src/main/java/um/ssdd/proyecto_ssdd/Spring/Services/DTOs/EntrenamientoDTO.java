@@ -2,15 +2,17 @@ package um.ssdd.proyecto_ssdd.Spring.Services.DTOs;
 
 public class EntrenamientoDTO {
 
-	private String TID;
+	private String WID;
 
-	public String getTID() {
-		return TID;
+	public String getWID() {
+		return WID;
 	}
 
-	public void setTID(String tID) {
-		TID = tID;
+	public void setWID(String wID) {
+		WID = wID;
 	}
+
+
 	
 	
 	
