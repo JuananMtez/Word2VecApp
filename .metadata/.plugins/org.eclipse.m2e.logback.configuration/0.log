@@ -259,3 +259,286 @@
 2021-05-01 11:11:13,808 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2021-05-01 11:11:13,809 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
 2021-05-01 11:11:13,811 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-01 11:11:13,819 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-05-01 11:11:13,822 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-01 11:11:13,822 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-05-01 11:11:13,822 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Juanan\git\proyecto-ssdd-word2vec\Backend\Proyecto_ssdd\src\test\resources
+2021-05-05 20:30:54,370 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2021-05-05 20:34:25,127 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-05 20:34:25,127 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-05-05 20:34:25,129 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-05 20:34:25,148 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-05-05 20:34:25,150 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-05 20:34:25,150 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-05-05 20:34:25,150 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Juanan\git\proyecto-ssdd-word2vec\Backend\Proyecto_ssdd\src\test\resources
+2021-05-05 20:34:26,369 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-05 20:34:26,369 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-05-05 20:34:26,371 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-05 20:34:26,379 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-05-05 20:34:26,382 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-05 20:34:26,382 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-05-05 20:34:26,382 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Juanan\git\proyecto-ssdd-word2vec\Backend\Proyecto_ssdd\src\test\resources
+2021-05-05 20:35:31,677 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-05 20:35:31,677 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-05-05 20:35:31,677 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-05 20:35:31,686 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-05-05 20:35:31,688 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-05 20:35:31,689 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-05-05 20:35:31,689 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Juanan\git\proyecto-ssdd-word2vec\Backend\Proyecto_ssdd\src\test\resources
+2021-05-05 20:37:50,043 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-05 20:37:50,044 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-05-05 20:37:50,044 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-05 20:37:50,053 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-05-05 20:37:50,055 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-05 20:37:50,055 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-05-05 20:37:50,055 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Juanan\git\proyecto-ssdd-word2vec\Backend\Proyecto_ssdd\src\test\resources
+2021-05-05 20:37:52,739 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-05 20:37:52,740 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-05-05 20:37:52,740 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-05 20:37:52,748 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-05-05 20:37:52,750 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-05 20:37:52,750 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-05-05 20:37:52,750 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Juanan\git\proyecto-ssdd-word2vec\Backend\Proyecto_ssdd\src\test\resources
+2021-05-05 20:41:27,631 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-05 20:41:27,631 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-05-05 20:41:27,631 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-05 20:41:27,642 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-05-05 20:41:27,645 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-05 20:41:27,645 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-05-05 20:41:27,645 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Juanan\git\proyecto-ssdd-word2vec\Backend\Proyecto_ssdd\src\test\resources
+2021-05-05 20:43:54,608 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-05 20:43:54,608 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-05-05 20:43:54,609 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-05 20:43:54,616 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-05-05 20:43:54,618 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-05 20:43:54,618 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-05-05 20:43:54,618 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Juanan\git\proyecto-ssdd-word2vec\Backend\Proyecto_ssdd\src\test\resources
+2021-05-05 20:59:11,224 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-05 20:59:11,225 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-05-05 20:59:11,225 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-05 20:59:11,234 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-05-05 20:59:11,237 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-05 20:59:11,237 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-05-05 20:59:11,238 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Juanan\git\proyecto-ssdd-word2vec\Backend\Proyecto_ssdd\src\test\resources
+2021-05-05 20:59:18,159 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-05 20:59:18,159 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-05-05 20:59:18,159 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-05 20:59:18,164 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-05-05 20:59:18,165 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-05 20:59:18,165 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-05-05 20:59:18,166 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Juanan\git\proyecto-ssdd-word2vec\Backend\Proyecto_ssdd\src\test\resources
+2021-05-05 21:52:40,461 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2021-05-05 21:53:27,588 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-05 21:53:27,589 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-05-05 21:53:27,593 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-05 21:53:27,604 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-05-05 21:53:27,605 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-05 21:53:27,606 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-05-05 21:53:27,606 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Juanan\git\proyecto-ssdd-word2vec\Backend\Proyecto_ssdd\src\test\resources
+2021-05-05 21:53:28,871 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-05 21:53:28,871 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-05-05 21:53:28,872 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-05 21:53:28,875 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-05-05 21:53:28,877 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-05 21:53:28,877 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-05-05 21:53:28,877 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Juanan\git\proyecto-ssdd-word2vec\Backend\Proyecto_ssdd\src\test\resources
+2021-05-05 21:53:51,074 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-05 21:53:51,074 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-05-05 21:53:51,075 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-05 21:53:51,084 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-05-05 21:53:51,086 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-05 21:53:51,086 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-05-05 21:53:51,086 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Juanan\git\proyecto-ssdd-word2vec\Backend\Proyecto_ssdd\src\test\resources
+2021-05-05 21:57:02,853 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-05 21:57:02,853 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-05-05 21:57:02,855 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-05-05 21:57:02,855 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-05 21:57:02,859 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-05 21:57:02,859 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-05-05 21:57:02,859 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Juanan\git\proyecto-ssdd-word2vec\Backend\Proyecto_ssdd\src\test\resources
+2021-05-05 21:58:43,573 [Worker-27: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: um.ssdd:ProyectoSSDD:0.0.1-SNAPSHOT @ C:\Users\Juanan\git\proyecto-ssdd-word2vec\Backend\Proyecto_ssdd\pom.xml.
+2021-05-05 21:58:44,057 [Worker-27: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/nd4j/${nd4j.backend}/${nd4j.version}/${nd4j.backend}-${nd4j.version}.pom
+2021-05-05 21:58:44,059 [Worker-27: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.nd4j:${nd4j.backend}:jar:${nd4j.version} is missing, no dependency information available
+2021-05-05 21:58:44,083 [Worker-27: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/deeplearning4j/deeplearning4j-core/${dl4j.version}/deeplearning4j-core-${dl4j.version}.pom
+2021-05-05 21:58:44,084 [Worker-27: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.deeplearning4j:deeplearning4j-core:jar:${dl4j.version} is missing, no dependency information available
+2021-05-05 21:58:44,192 [Worker-27: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/deeplearning4j/deeplearning4j-nlp/${dl4j.version}/deeplearning4j-nlp-${dl4j.version}.pom
+2021-05-05 21:58:44,193 [Worker-27: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.deeplearning4j:deeplearning4j-nlp:jar:${dl4j.version} is missing, no dependency information available
+2021-05-05 21:58:44,302 [Worker-27: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/deeplearning4j/deeplearning4j-zoo/${dl4j.version}/deeplearning4j-zoo-${dl4j.version}.pom
+2021-05-05 21:58:44,303 [Worker-27: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.deeplearning4j:deeplearning4j-zoo:jar:${dl4j.version} is missing, no dependency information available
+2021-05-05 21:58:44,375 [AetherRepositoryConnector-repo.maven.apache.org-0-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/deeplearning4j/deeplearning4j-core/${dl4j.version}/deeplearning4j-core-${dl4j.version}.jar
+2021-05-05 21:58:44,459 [AetherRepositoryConnector-repo.maven.apache.org-0-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/nd4j/${nd4j.backend}/${nd4j.version}/${nd4j.backend}-${nd4j.version}.jar
+2021-05-05 21:58:44,459 [AetherRepositoryConnector-repo.maven.apache.org-0-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/deeplearning4j/deeplearning4j-zoo/${dl4j.version}/deeplearning4j-zoo-${dl4j.version}.jar
+2021-05-05 21:58:44,459 [AetherRepositoryConnector-repo.maven.apache.org-0-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/deeplearning4j/deeplearning4j-nlp/${dl4j.version}/deeplearning4j-nlp-${dl4j.version}.jar
+2021-05-05 21:58:44,766 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-05 21:58:44,766 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-05-05 21:58:44,768 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-05-05 21:58:44,768 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-05-05 21:58:44,769 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-05 21:58:44,769 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-05-05 21:58:44,769 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Juanan\git\proyecto-ssdd-word2vec\Backend\Proyecto_ssdd\src\test\resources
+2021-05-05 22:00:59,332 [Worker-30: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2021-05-05 22:00:59,602 [Worker-30: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: um.ssdd:ProyectoSSDD:0.0.1-SNAPSHOT @ C:\Users\Juanan\git\proyecto-ssdd-word2vec\Backend\Proyecto_ssdd\pom.xml.
+2021-05-05 22:00:59,685 [Worker-30: Updating Maven Project] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.nd4j:${nd4j.backend}:jar:${nd4j.version} is missing, no dependency information available
+2021-05-05 22:00:59,687 [Worker-30: Updating Maven Project] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.deeplearning4j:deeplearning4j-core:jar:${dl4j.version} is missing, no dependency information available
+2021-05-05 22:00:59,688 [Worker-30: Updating Maven Project] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.deeplearning4j:deeplearning4j-nlp:jar:${dl4j.version} is missing, no dependency information available
+2021-05-05 22:00:59,689 [Worker-30: Updating Maven Project] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.deeplearning4j:deeplearning4j-zoo:jar:${dl4j.version} is missing, no dependency information available
+2021-05-05 22:00:59,994 [Worker-30: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Proyecto_ssdd/src/main/resources
+2021-05-05 22:00:59,995 [Worker-30: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Proyecto_ssdd/src/main/resources
+2021-05-05 22:01:00,287 [Worker-30: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2021-05-05 22:02:44,385 [Worker-32: reload maven project] ERROR o.e.m2e.editor.pom.MavenPomEditor - failed to load maven project for org.eclipse.ui.part.FileEditorInput(/Proyecto_ssdd/pom.xml)
+org.eclipse.core.runtime.CoreException: Could not read maven project
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:850)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:1069)
+	at com.google.common.cache.LocalCache$LocalManualCache$1.load(LocalCache.java:4878)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3529)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2278)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2155)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2045)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3953)
+	at com.google.common.cache.LocalCache$LocalManualCache.get(LocalCache.java:4873)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.getMavenProject(ProjectRegistryManager.java:1068)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectFacade.getMavenProject(MavenProjectFacade.java:243)
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:261)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:634)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$3.run(MavenPomEditor.java:938)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2021-05-05 22:02:44,803 [Worker-31: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: um.ssdd:ProyectoSSDD:0.0.1-SNAPSHOT @ C:\Users\Juanan\git\proyecto-ssdd-word2vec\Backend\Proyecto_ssdd\pom.xml.
+2021-05-05 22:02:45,167 [Worker-31: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/nd4j/${nd4j.backend}/0.9.1/${nd4j.backend}-0.9.1.pom
+2021-05-05 22:02:45,168 [Worker-31: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.nd4j:${nd4j.backend}:jar:0.9.1 is missing, no dependency information available
+2021-05-05 22:02:45,207 [Worker-31: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/projectlombok/lombok/1.18.18/lombok-1.18.18.pom
+2021-05-05 22:02:45,253 [Worker-31: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/projectlombok/lombok/1.18.18/lombok-1.18.18.pom
+2021-05-05 22:02:45,300 [Worker-31: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.pom
+2021-05-05 22:02:45,345 [Worker-31: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.pom
+2021-05-05 22:02:45,383 [Worker-31: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/51/commons-parent-51.pom
+2021-05-05 22:02:45,446 [Worker-31: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/51/commons-parent-51.pom
+2021-05-05 22:02:45,482 [Worker-31: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/junit/junit/4.13.2/junit-4.13.2.pom
+2021-05-05 22:02:45,521 [Worker-31: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/junit/junit/4.13.2/junit-4.13.2.pom
+2021-05-05 22:02:45,553 [Worker-31: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2.pom
+2021-05-05 22:02:45,590 [Worker-31: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2.pom
+2021-05-05 22:02:45,652 [Worker-31: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/freemarker/freemarker/2.3.31/freemarker-2.3.31.pom
+2021-05-05 22:02:45,691 [Worker-31: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/freemarker/freemarker/2.3.31/freemarker-2.3.31.pom
+2021-05-05 22:02:45,782 [Worker-31: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.15/commons-codec-1.15.pom
+2021-05-05 22:02:45,824 [Worker-31: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.15/commons-codec-1.15.pom
+2021-05-05 22:02:45,855 [Worker-31: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/52/commons-parent-52.pom
+2021-05-05 22:02:45,898 [Worker-31: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/52/commons-parent-52.pom
+2021-05-05 22:02:46,014 [AetherRepositoryConnector-repo.maven.apache.org-1-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/junit/junit/4.13.2/junit-4.13.2.jar
+2021-05-05 22:02:46,074 [AetherRepositoryConnector-repo.maven.apache.org-1-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2.jar
+2021-05-05 22:02:46,076 [AetherRepositoryConnector-repo.maven.apache.org-1-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/projectlombok/lombok/1.18.18/lombok-1.18.18.jar
+2021-05-05 22:02:46,159 [AetherRepositoryConnector-repo.maven.apache.org-1-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/junit/junit/4.13.2/junit-4.13.2.jar
+2021-05-05 22:02:46,161 [AetherRepositoryConnector-repo.maven.apache.org-1-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2.jar
+2021-05-05 22:02:46,168 [AetherRepositoryConnector-repo.maven.apache.org-1-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar
+2021-05-05 22:02:46,194 [AetherRepositoryConnector-repo.maven.apache.org-1-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/nd4j/${nd4j.backend}/0.9.1/${nd4j.backend}-0.9.1.jar
+2021-05-05 22:02:46,197 [AetherRepositoryConnector-repo.maven.apache.org-1-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/freemarker/freemarker/2.3.31/freemarker-2.3.31.jar
+2021-05-05 22:02:46,257 [AetherRepositoryConnector-repo.maven.apache.org-1-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.15/commons-codec-1.15.jar
+2021-05-05 22:02:46,287 [AetherRepositoryConnector-repo.maven.apache.org-1-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/projectlombok/lombok/1.18.18/lombok-1.18.18.jar
+2021-05-05 22:02:46,289 [AetherRepositoryConnector-repo.maven.apache.org-1-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar
+2021-05-05 22:02:46,330 [AetherRepositoryConnector-repo.maven.apache.org-1-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/freemarker/freemarker/2.3.31/freemarker-2.3.31.jar
+2021-05-05 22:02:46,352 [AetherRepositoryConnector-repo.maven.apache.org-1-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.15/commons-codec-1.15.jar
+2021-05-05 22:02:47,281 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-05 22:02:47,281 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-05-05 22:02:47,282 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-05 22:02:47,290 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-05 22:02:47,293 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-05 22:02:47,293 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-05-05 22:02:47,293 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Juanan\git\proyecto-ssdd-word2vec\Backend\Proyecto_ssdd\src\test\resources
+2021-05-05 22:03:13,011 [Worker-34: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: um.ssdd:ProyectoSSDD:0.0.1-SNAPSHOT @ C:\Users\Juanan\git\proyecto-ssdd-word2vec\Backend\Proyecto_ssdd\pom.xml.
+2021-05-05 22:03:13,968 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-05 22:03:13,968 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-05-05 22:03:13,970 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-05 22:03:13,983 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-05 22:03:13,986 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-05 22:03:13,986 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-05-05 22:03:13,986 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Juanan\git\proyecto-ssdd-word2vec\Backend\Proyecto_ssdd\src\test\resources
+2021-05-05 22:03:15,226 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-05 22:03:15,226 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-05-05 22:03:15,227 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-05 22:03:15,229 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-05 22:03:15,232 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-05 22:03:15,232 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-05-05 22:03:15,232 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Juanan\git\proyecto-ssdd-word2vec\Backend\Proyecto_ssdd\src\test\resources
+2021-05-05 22:03:15,301 [Worker-28: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/junit/junit/4.13.2/junit-4.13.2-sources.jar
+2021-05-05 22:03:15,416 [Worker-28: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/junit/junit/4.13.2/junit-4.13.2-sources.jar
+2021-05-05 22:03:15,443 [Worker-28: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for junit:junit:4.13.2
+2021-05-05 22:03:15,603 [Worker-28: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2-sources.jar
+2021-05-05 22:03:15,706 [Worker-28: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2-sources.jar
+2021-05-05 22:03:15,734 [Worker-28: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.hamcrest:hamcrest-core:2.2
+2021-05-05 22:03:15,896 [Worker-28: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11-sources.jar
+2021-05-05 22:03:16,064 [Worker-28: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11-sources.jar
+2021-05-05 22:03:16,096 [Worker-28: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.apache.commons:commons-lang3:3.11
+2021-05-05 22:03:16,243 [Worker-28: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/projectlombok/lombok/1.18.18/lombok-1.18.18-sources.jar
+2021-05-05 22:03:16,404 [Worker-28: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/projectlombok/lombok/1.18.18/lombok-1.18.18-sources.jar
+2021-05-05 22:03:16,458 [Worker-28: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.projectlombok:lombok:1.18.18
+2021-05-05 22:03:16,629 [Worker-28: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/freemarker/freemarker/2.3.31/freemarker-2.3.31-sources.jar
+2021-05-05 22:03:16,852 [Worker-28: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/freemarker/freemarker/2.3.31/freemarker-2.3.31-sources.jar
+2021-05-05 22:03:16,881 [Worker-28: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.freemarker:freemarker:2.3.31
+2021-05-05 22:03:17,038 [Worker-28: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.15/commons-codec-1.15-sources.jar
+2021-05-05 22:03:17,174 [Worker-28: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.15/commons-codec-1.15-sources.jar
+2021-05-05 22:03:17,203 [Worker-28: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for commons-codec:commons-codec:1.15
+2021-05-05 22:03:17,849 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-05 22:03:17,849 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-05-05 22:03:17,849 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-05-05 22:03:17,849 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-05-05 22:03:17,851 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-05 22:03:17,851 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-05-05 22:03:17,851 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Juanan\git\proyecto-ssdd-word2vec\Backend\Proyecto_ssdd\src\test\resources
+2021-05-05 22:03:22,834 [Worker-32: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2021-05-05 22:03:23,140 [Worker-32: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: um.ssdd:ProyectoSSDD:0.0.1-SNAPSHOT @ C:\Users\Juanan\git\proyecto-ssdd-word2vec\Backend\Proyecto_ssdd\pom.xml.
+2021-05-05 22:03:23,809 [Worker-32: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Proyecto_ssdd/src/main/java
+2021-05-05 22:03:23,809 [Worker-32: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Proyecto_ssdd/src/main/resources
+2021-05-05 22:03:23,810 [Worker-32: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Proyecto_ssdd/src/main/resources
+2021-05-05 22:03:23,810 [Worker-32: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Proyecto_ssdd/src/test/java
+2021-05-05 22:03:24,215 [Worker-32: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 1 sec
+2021-05-05 22:03:25,050 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-05 22:03:25,050 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-05-05 22:03:25,051 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-05 22:03:25,060 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-05 22:03:25,064 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-05 22:03:25,064 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-05-05 22:03:25,064 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Juanan\git\proyecto-ssdd-word2vec\Backend\Proyecto_ssdd\src\test\resources
+2021-05-05 22:11:40,031 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-05 22:11:40,032 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-05-05 22:11:40,033 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-05 22:11:40,037 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-05 22:11:40,039 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-05 22:11:40,039 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-05-05 22:11:40,039 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Juanan\git\proyecto-ssdd-word2vec\Backend\Proyecto_ssdd\src\test\resources
+2021-05-05 22:11:49,267 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-05 22:11:49,267 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-05-05 22:11:49,267 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-05 22:11:49,271 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-05 22:11:49,272 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-05 22:11:49,272 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-05-05 22:11:49,272 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Juanan\git\proyecto-ssdd-word2vec\Backend\Proyecto_ssdd\src\test\resources
+2021-05-05 22:16:38,448 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-05 22:16:38,448 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-05-05 22:16:38,449 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-05 22:16:38,453 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-05 22:16:38,454 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-05 22:16:38,454 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-05-05 22:16:38,454 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Juanan\git\proyecto-ssdd-word2vec\Backend\Proyecto_ssdd\src\test\resources
+2021-05-05 22:18:05,428 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-05 22:18:05,428 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-05-05 22:18:05,428 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-05 22:18:05,431 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-05 22:18:05,432 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-05 22:18:05,432 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-05-05 22:18:05,433 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Juanan\git\proyecto-ssdd-word2vec\Backend\Proyecto_ssdd\src\test\resources
+2021-05-05 22:27:58,553 [Worker-37: Launching Proyecto_ssdd - ProyectoSsddApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-05 22:27:58,553 [Worker-37: Launching Proyecto_ssdd - ProyectoSsddApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-05-05 22:27:58,554 [Worker-37: Launching Proyecto_ssdd - ProyectoSsddApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-05 22:27:58,558 [Worker-37: Launching Proyecto_ssdd - ProyectoSsddApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-05 22:27:58,560 [Worker-37: Launching Proyecto_ssdd - ProyectoSsddApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-05 22:27:58,560 [Worker-37: Launching Proyecto_ssdd - ProyectoSsddApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-05-05 22:27:58,560 [Worker-37: Launching Proyecto_ssdd - ProyectoSsddApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Juanan\git\proyecto-ssdd-word2vec\Backend\Proyecto_ssdd\src\test\resources
+2021-05-05 22:31:02,021 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-05 22:31:02,021 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-05-05 22:31:02,022 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-05 22:31:02,026 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-05 22:31:02,028 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-05 22:31:02,028 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-05-05 22:31:02,028 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Juanan\git\proyecto-ssdd-word2vec\Backend\Proyecto_ssdd\src\test\resources
+2021-05-05 22:32:53,678 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-05 22:32:53,678 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-05-05 22:32:53,679 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-05 22:32:53,682 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-05 22:32:53,684 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.

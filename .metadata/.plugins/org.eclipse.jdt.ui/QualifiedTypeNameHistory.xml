@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="um.ssdd.proyecto_ssdd.Spring.Services.DTOs.CodigoDTO"/>
-    <fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
     <fullyQualifiedTypeName name="java.util.Properties"/>
     <fullyQualifiedTypeName name="javax.mail.Authenticator"/>
     <fullyQualifiedTypeName name="javax.mail.PasswordAuthentication"/>
@@ -17,4 +16,7 @@
     <fullyQualifiedTypeName name="javax.mail.Transport"/>
     <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="javax.mail.MessagingException"/>
+    <fullyQualifiedTypeName name="um.ssdd.proyecto_ssdd.Spring.Services.DTOs.UsuarioLogin"/>
+    <fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
 </qualifiedTypeNameHistroy>

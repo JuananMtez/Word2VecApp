@@ -1,0 +1,9 @@
+package um.ssdd.proyecto_ssdd.Spring.Repositories;
+
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+import um.ssdd.proyecto_ssdd.Spring.Entities.Fichero;
+
+public interface IEntrenamientoRepository extends MongoRepository<Fichero, String> {
+
+}

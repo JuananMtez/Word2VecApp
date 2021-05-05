@@ -4,6 +4,7 @@ import { Fichero } from 'app/Entities/Fichero';
 import { AuthenticationService } from 'app/Auth/authentication.service';
 import { Usuario } from 'app/Entities/Usuario';
 import { FicheroService } from '../fichero.service';
+import { EntrenamientoService } from 'app/Entrenamiento/entrenamiento.service';
 
 @Component({
   selector: 'app-listar-ficheros',
@@ -18,7 +19,7 @@ export class ListarFicherosComponent implements OnInit {
   usuario: Usuario;
 
 
-  constructor(private authService: AuthenticationService, private ficheroService: FicheroService, private router: Router) { }
+  constructor(private authService: AuthenticationService, private ficheroService: FicheroService, private entrenamientoService: EntrenamientoService, private router: Router) { }
 
   ngOnInit(): void {
 
@@ -114,6 +115,20 @@ export class ListarFicherosComponent implements OnInit {
     })
   }
 
+  entrenar(fid: string) {
+
+    this.entrenamientoService.entrenar(fid)
+    .subscribe(data => {
+
+
+
+
+
+    }, error => {
+
+    })
+
+  }
 
   hayEntrenamiento(fichero: Fichero) {
 

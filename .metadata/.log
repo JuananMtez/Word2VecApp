@@ -1387,3 +1387,727 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-01 10:53:35.265
 !MESSAGE executing callback sts4.classpath.yAzGMAvk SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-01 11:22:04.627
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.yAzGMAvk
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-01 11:22:04.627
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.yAzGMAvk
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-01 11:22:04.627
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-01 11:22:04.628
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.yAzGMAvk => OK
+
+!ENTRY org.eclipse.ui 2 2 2021-05-01 11:22:05.008
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+!SESSION 2021-05-05 20:30:38.843 -----------------------------------------------
+eclipse.buildId=4.18.0.I20201202-1800
+java.version=15.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jface 2 0 2021-05-05 20:30:46.992
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-05-05 20:30:46.992
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@f776b4a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2fb555e8,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 20:30:52.817
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 20:30:52.818
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@5084fc91[org.springframework.tooling.boot.ls:1.24.0.202012131915(id=959)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 20:30:52.825
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 20:30:52.925
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.eclipse.egit.ui 2 0 2021-05-05 20:30:55.300
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Juanan'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 20:30:56.293
+!MESSAGE Boot LS startup time from start to initialized: 3459ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 20:30:56.692
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.ZdxckNhMisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 20:30:56.694
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 20:30:56.695
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 20:30:56.695
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 20:30:56.695
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 20:30:56.696
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.ZdxckNhM => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 20:30:56.702
+!MESSAGE classpath=74 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 20:30:56.703
+!MESSAGE buffering callback sts4.classpath.ZdxckNhM Proyecto_ssdd false 74
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 20:30:56.704
+!MESSAGE executing callback sts4.classpath.ZdxckNhM 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 20:30:56.718
+!MESSAGE executing callback sts4.classpath.ZdxckNhM SUCCESS [done]
+
+!ENTRY org.eclipse.lsp4e 2 0 2021-05-05 20:35:42.226
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:385)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2086)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2021-05-05 20:38:31.998
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:385)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2086)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2021-05-05 20:49:50.718
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:385)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2086)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.ui 2 2 2021-05-05 20:58:56.141
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 20:59:18.344
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.ZdxckNhM
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 20:59:18.344
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.ZdxckNhM
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 20:59:18.345
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 20:59:18.345
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.ZdxckNhM => OK
+!SESSION 2021-05-05 21:52:28.294 -----------------------------------------------
+eclipse.buildId=4.18.0.I20201202-1800
+java.version=15.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jface 2 0 2021-05-05 21:52:36.230
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-05-05 21:52:36.230
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5620470a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@29682244,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 21:52:39.443
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 21:52:39.444
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@65ad56c2[org.springframework.tooling.boot.ls:1.24.0.202012131915(id=959)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 21:52:39.445
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 21:52:39.463
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 21:52:40.943
+!MESSAGE Boot LS startup time from start to initialized: 1493ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 21:52:41.057
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.aCYQKfpAisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 21:52:41.059
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 21:52:41.060
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 21:52:41.061
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 21:52:41.061
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 21:52:41.062
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.aCYQKfpA => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 21:52:41.069
+!MESSAGE classpath=74 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 21:52:41.071
+!MESSAGE buffering callback sts4.classpath.aCYQKfpA Proyecto_ssdd false 74
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 21:52:41.071
+!MESSAGE executing callback sts4.classpath.aCYQKfpA 1 batched events
+
+!ENTRY org.eclipse.egit.ui 2 0 2021-05-05 21:52:41.074
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Juanan'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 21:52:41.090
+!MESSAGE executing callback sts4.classpath.aCYQKfpA SUCCESS [done]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-05-05 21:58:44.060
+!MESSAGE The POM for org.nd4j:${nd4j.backend}:jar:${nd4j.version} is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-05-05 21:58:44.084
+!MESSAGE The POM for org.deeplearning4j:deeplearning4j-core:jar:${dl4j.version} is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-05-05 21:58:44.193
+!MESSAGE The POM for org.deeplearning4j:deeplearning4j-nlp:jar:${dl4j.version} is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-05-05 21:58:44.304
+!MESSAGE The POM for org.deeplearning4j:deeplearning4j-zoo:jar:${dl4j.version} is missing, no dependency information available
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 21:58:45.101
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 21:58:45.104
+!MESSAGE classpath=78 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 21:58:45.106
+!MESSAGE buffering callback sts4.classpath.aCYQKfpA Proyecto_ssdd false 74
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 21:58:45.106
+!MESSAGE executing callback sts4.classpath.aCYQKfpA 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 21:58:45.114
+!MESSAGE executing callback sts4.classpath.aCYQKfpA SUCCESS [done]
+
+!ENTRY org.eclipse.m2e.jdt 4 -1 2021-05-05 21:58:45.696
+!MESSAGE Could not download sources or javadoc
+!SUBENTRY 1 org.eclipse.m2e.core 4 0 2021-05-05 21:58:45.696
+!MESSAGE Could not read maven project
+!SUBENTRY 2 org.eclipse.m2e.core 4 0 2021-05-05 21:58:45.696
+!MESSAGE Some problems were encountered while processing the POMs:
+[ERROR] 'dependencies.dependency.artifactId' for org.nd4j:${nd4j.backend}:jar with value '${nd4j.backend}' does not match a valid id pattern. @ line 60, column 19
+
+!STACK 0
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[ERROR] 'dependencies.dependency.artifactId' for org.nd4j:${nd4j.backend}:jar with value '${nd4j.backend}' does not match a valid id pattern. @ line 60, column 19
+
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readMavenProjects(MavenImpl.java:676)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$13(ProjectRegistryManager.java:870)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:153)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:101)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.execute(ProjectRegistryManager.java:1027)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:866)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:835)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:1069)
+	at com.google.common.cache.LocalCache$LocalManualCache$1.load(LocalCache.java:4878)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3529)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2278)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2155)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2045)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3953)
+	at com.google.common.cache.LocalCache$LocalManualCache.get(LocalCache.java:4873)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.getMavenProject(ProjectRegistryManager.java:1068)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectFacade.getMavenProject(MavenProjectFacade.java:243)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:265)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:233)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:161)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:153)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:101)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1374)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:161)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui 2 2 2021-05-05 22:00:54.675
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY Activator 4 0 2021-05-05 22:00:55.006
+!MESSAGE Could not read maven project
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not read maven project
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:850)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:1069)
+	at com.google.common.cache.LocalCache$LocalManualCache$1.load(LocalCache.java:4878)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3529)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2278)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2155)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2045)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3953)
+	at com.google.common.cache.LocalCache$LocalManualCache.get(LocalCache.java:4873)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.getMavenProject(ProjectRegistryManager.java:1068)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectFacade.getMavenProject(MavenProjectFacade.java:243)
+	at org.springframework.ide.eclipse.boot.core.internal.MavenSpringBootProject.getMavenProject(MavenSpringBootProject.java:130)
+	at org.springframework.ide.eclipse.boot.core.internal.MavenSpringBootProject.getDependencies(MavenSpringBootProject.java:147)
+	at org.springframework.ide.eclipse.boot.core.BootPropertyTester.hasDevTools(BootPropertyTester.java:204)
+	at org.springframework.ide.eclipse.boot.core.BootPropertyTester$2.run(BootPropertyTester.java:189)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Some problems were encountered while processing the POMs:
+[ERROR] 'dependencies.dependency.artifactId' for org.nd4j:${nd4j.backend}:jar with value '${nd4j.backend}' does not match a valid id pattern. @ line 60, column 19
+
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[ERROR] 'dependencies.dependency.artifactId' for org.nd4j:${nd4j.backend}:jar with value '${nd4j.backend}' does not match a valid id pattern. @ line 60, column 19
+
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readMavenProjects(MavenImpl.java:676)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$13(ProjectRegistryManager.java:870)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:153)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:101)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.execute(ProjectRegistryManager.java:1027)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:866)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:835)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:1069)
+	at com.google.common.cache.LocalCache$LocalManualCache$1.load(LocalCache.java:4878)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3529)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2278)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2155)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2045)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3953)
+	at com.google.common.cache.LocalCache$LocalManualCache.get(LocalCache.java:4873)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.getMavenProject(ProjectRegistryManager.java:1068)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectFacade.getMavenProject(MavenProjectFacade.java:243)
+	at org.springframework.ide.eclipse.boot.core.internal.MavenSpringBootProject.getMavenProject(MavenSpringBootProject.java:130)
+	at org.springframework.ide.eclipse.boot.core.internal.MavenSpringBootProject.getDependencies(MavenSpringBootProject.java:147)
+	at org.springframework.ide.eclipse.boot.core.BootPropertyTester.hasDevTools(BootPropertyTester.java:204)
+	at org.springframework.ide.eclipse.boot.core.BootPropertyTester$2.run(BootPropertyTester.java:189)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.m2e.core 4 0 2021-05-05 22:00:55.007
+!MESSAGE Could not read maven project
+!SUBENTRY 2 org.eclipse.m2e.core 4 0 2021-05-05 22:00:55.007
+!MESSAGE Some problems were encountered while processing the POMs:
+[ERROR] 'dependencies.dependency.artifactId' for org.nd4j:${nd4j.backend}:jar with value '${nd4j.backend}' does not match a valid id pattern. @ line 60, column 19
+
+!STACK 0
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[ERROR] 'dependencies.dependency.artifactId' for org.nd4j:${nd4j.backend}:jar with value '${nd4j.backend}' does not match a valid id pattern. @ line 60, column 19
+
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readMavenProjects(MavenImpl.java:676)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$13(ProjectRegistryManager.java:870)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:153)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:101)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.execute(ProjectRegistryManager.java:1027)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:866)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:835)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:1069)
+	at com.google.common.cache.LocalCache$LocalManualCache$1.load(LocalCache.java:4878)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3529)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2278)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2155)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2045)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3953)
+	at com.google.common.cache.LocalCache$LocalManualCache.get(LocalCache.java:4873)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.getMavenProject(ProjectRegistryManager.java:1068)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectFacade.getMavenProject(MavenProjectFacade.java:243)
+	at org.springframework.ide.eclipse.boot.core.internal.MavenSpringBootProject.getMavenProject(MavenSpringBootProject.java:130)
+	at org.springframework.ide.eclipse.boot.core.internal.MavenSpringBootProject.getDependencies(MavenSpringBootProject.java:147)
+	at org.springframework.ide.eclipse.boot.core.BootPropertyTester.hasDevTools(BootPropertyTester.java:204)
+	at org.springframework.ide.eclipse.boot.core.BootPropertyTester$2.run(BootPropertyTester.java:189)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY Activator 4 0 2021-05-05 22:00:55.038
+!MESSAGE Could not read maven project
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not read maven project
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:850)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:1069)
+	at com.google.common.cache.LocalCache$LocalManualCache$1.load(LocalCache.java:4878)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3529)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2278)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2155)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2045)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3953)
+	at com.google.common.cache.LocalCache$LocalManualCache.get(LocalCache.java:4873)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.getMavenProject(ProjectRegistryManager.java:1068)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectFacade.getMavenProject(MavenProjectFacade.java:243)
+	at org.springframework.ide.eclipse.boot.core.internal.MavenSpringBootProject.getMavenProject(MavenSpringBootProject.java:130)
+	at org.springframework.ide.eclipse.boot.core.internal.MavenSpringBootProject.getDependencies(MavenSpringBootProject.java:147)
+	at org.springframework.ide.eclipse.boot.core.BootPropertyTester.hasDevTools(BootPropertyTester.java:204)
+	at org.springframework.ide.eclipse.boot.core.BootPropertyTester$2.run(BootPropertyTester.java:189)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Some problems were encountered while processing the POMs:
+[ERROR] 'dependencies.dependency.artifactId' for org.nd4j:${nd4j.backend}:jar with value '${nd4j.backend}' does not match a valid id pattern. @ line 60, column 19
+
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[ERROR] 'dependencies.dependency.artifactId' for org.nd4j:${nd4j.backend}:jar with value '${nd4j.backend}' does not match a valid id pattern. @ line 60, column 19
+
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readMavenProjects(MavenImpl.java:676)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$13(ProjectRegistryManager.java:870)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:153)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:101)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.execute(ProjectRegistryManager.java:1027)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:866)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:835)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:1069)
+	at com.google.common.cache.LocalCache$LocalManualCache$1.load(LocalCache.java:4878)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3529)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2278)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2155)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2045)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3953)
+	at com.google.common.cache.LocalCache$LocalManualCache.get(LocalCache.java:4873)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.getMavenProject(ProjectRegistryManager.java:1068)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectFacade.getMavenProject(MavenProjectFacade.java:243)
+	at org.springframework.ide.eclipse.boot.core.internal.MavenSpringBootProject.getMavenProject(MavenSpringBootProject.java:130)
+	at org.springframework.ide.eclipse.boot.core.internal.MavenSpringBootProject.getDependencies(MavenSpringBootProject.java:147)
+	at org.springframework.ide.eclipse.boot.core.BootPropertyTester.hasDevTools(BootPropertyTester.java:204)
+	at org.springframework.ide.eclipse.boot.core.BootPropertyTester$2.run(BootPropertyTester.java:189)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.m2e.core 4 0 2021-05-05 22:00:55.038
+!MESSAGE Could not read maven project
+!SUBENTRY 2 org.eclipse.m2e.core 4 0 2021-05-05 22:00:55.038
+!MESSAGE Some problems were encountered while processing the POMs:
+[ERROR] 'dependencies.dependency.artifactId' for org.nd4j:${nd4j.backend}:jar with value '${nd4j.backend}' does not match a valid id pattern. @ line 60, column 19
+
+!STACK 0
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[ERROR] 'dependencies.dependency.artifactId' for org.nd4j:${nd4j.backend}:jar with value '${nd4j.backend}' does not match a valid id pattern. @ line 60, column 19
+
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readMavenProjects(MavenImpl.java:676)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$13(ProjectRegistryManager.java:870)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:153)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:101)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.execute(ProjectRegistryManager.java:1027)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:866)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:835)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:1069)
+	at com.google.common.cache.LocalCache$LocalManualCache$1.load(LocalCache.java:4878)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3529)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2278)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2155)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2045)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3953)
+	at com.google.common.cache.LocalCache$LocalManualCache.get(LocalCache.java:4873)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.getMavenProject(ProjectRegistryManager.java:1068)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectFacade.getMavenProject(MavenProjectFacade.java:243)
+	at org.springframework.ide.eclipse.boot.core.internal.MavenSpringBootProject.getMavenProject(MavenSpringBootProject.java:130)
+	at org.springframework.ide.eclipse.boot.core.internal.MavenSpringBootProject.getDependencies(MavenSpringBootProject.java:147)
+	at org.springframework.ide.eclipse.boot.core.BootPropertyTester.hasDevTools(BootPropertyTester.java:204)
+	at org.springframework.ide.eclipse.boot.core.BootPropertyTester$2.run(BootPropertyTester.java:189)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-05-05 22:00:59.686
+!MESSAGE The POM for org.nd4j:${nd4j.backend}:jar:${nd4j.version} is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-05-05 22:00:59.687
+!MESSAGE The POM for org.deeplearning4j:deeplearning4j-core:jar:${dl4j.version} is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-05-05 22:00:59.688
+!MESSAGE The POM for org.deeplearning4j:deeplearning4j-nlp:jar:${dl4j.version} is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-05-05 22:00:59.689
+!MESSAGE The POM for org.deeplearning4j:deeplearning4j-zoo:jar:${dl4j.version} is missing, no dependency information available
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 22:01:00.225
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 22:01:00.228
+!MESSAGE classpath=76 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 22:01:00.231
+!MESSAGE buffering callback sts4.classpath.aCYQKfpA Proyecto_ssdd false 72
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 22:01:00.231
+!MESSAGE executing callback sts4.classpath.aCYQKfpA 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 22:01:00.240
+!MESSAGE executing callback sts4.classpath.aCYQKfpA SUCCESS [done]
+
+!ENTRY org.eclipse.m2e.jdt 4 -1 2021-05-05 22:01:00.932
+!MESSAGE Could not download sources or javadoc
+!SUBENTRY 1 org.eclipse.m2e.core 4 0 2021-05-05 22:01:00.932
+!MESSAGE Could not read maven project
+!SUBENTRY 2 org.eclipse.m2e.core 4 0 2021-05-05 22:01:00.932
+!MESSAGE Some problems were encountered while processing the POMs:
+[ERROR] 'dependencies.dependency.artifactId' for org.nd4j:${nd4j.backend}:jar with value '${nd4j.backend}' does not match a valid id pattern. @ line 60, column 19
+
+!STACK 0
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[ERROR] 'dependencies.dependency.artifactId' for org.nd4j:${nd4j.backend}:jar with value '${nd4j.backend}' does not match a valid id pattern. @ line 60, column 19
+
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readMavenProjects(MavenImpl.java:676)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$13(ProjectRegistryManager.java:870)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:153)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:101)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.execute(ProjectRegistryManager.java:1027)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:866)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:835)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:1069)
+	at com.google.common.cache.LocalCache$LocalManualCache$1.load(LocalCache.java:4878)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3529)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2278)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2155)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2045)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3953)
+	at com.google.common.cache.LocalCache$LocalManualCache.get(LocalCache.java:4873)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.getMavenProject(ProjectRegistryManager.java:1068)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectFacade.getMavenProject(MavenProjectFacade.java:243)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:265)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:233)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:161)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:153)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:101)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1374)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:161)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2021-05-05 22:02:44.386
+!MESSAGE failed to load maven project for org.eclipse.ui.part.FileEditorInput(/Proyecto_ssdd/pom.xml)
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not read maven project
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:850)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:1069)
+	at com.google.common.cache.LocalCache$LocalManualCache$1.load(LocalCache.java:4878)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3529)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2278)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2155)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2045)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3953)
+	at com.google.common.cache.LocalCache$LocalManualCache.get(LocalCache.java:4873)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.getMavenProject(ProjectRegistryManager.java:1068)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectFacade.getMavenProject(MavenProjectFacade.java:243)
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:261)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:634)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$3.run(MavenPomEditor.java:938)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Some problems were encountered while processing the POMs:
+[ERROR] 'dependencies.dependency.artifactId' for org.nd4j:${nd4j.backend}:jar with value '${nd4j.backend}' does not match a valid id pattern. @ line 68, column 19
+
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[ERROR] 'dependencies.dependency.artifactId' for org.nd4j:${nd4j.backend}:jar with value '${nd4j.backend}' does not match a valid id pattern. @ line 68, column 19
+
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readMavenProjects(MavenImpl.java:676)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$13(ProjectRegistryManager.java:870)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:153)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:101)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.execute(ProjectRegistryManager.java:1027)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:866)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:835)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:1069)
+	at com.google.common.cache.LocalCache$LocalManualCache$1.load(LocalCache.java:4878)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3529)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2278)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2155)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2045)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3953)
+	at com.google.common.cache.LocalCache$LocalManualCache.get(LocalCache.java:4873)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.getMavenProject(ProjectRegistryManager.java:1068)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectFacade.getMavenProject(MavenProjectFacade.java:243)
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:261)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:634)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$3.run(MavenPomEditor.java:938)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.m2e.core 4 0 2021-05-05 22:02:44.386
+!MESSAGE Could not read maven project
+!SUBENTRY 2 org.eclipse.m2e.core 4 0 2021-05-05 22:02:44.386
+!MESSAGE Some problems were encountered while processing the POMs:
+[ERROR] 'dependencies.dependency.artifactId' for org.nd4j:${nd4j.backend}:jar with value '${nd4j.backend}' does not match a valid id pattern. @ line 68, column 19
+
+!STACK 0
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[ERROR] 'dependencies.dependency.artifactId' for org.nd4j:${nd4j.backend}:jar with value '${nd4j.backend}' does not match a valid id pattern. @ line 68, column 19
+
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readMavenProjects(MavenImpl.java:676)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$13(ProjectRegistryManager.java:870)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:153)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:101)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.execute(ProjectRegistryManager.java:1027)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:866)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:835)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:1069)
+	at com.google.common.cache.LocalCache$LocalManualCache$1.load(LocalCache.java:4878)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3529)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2278)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2155)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2045)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3953)
+	at com.google.common.cache.LocalCache$LocalManualCache.get(LocalCache.java:4873)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.getMavenProject(ProjectRegistryManager.java:1068)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectFacade.getMavenProject(MavenProjectFacade.java:243)
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:261)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:634)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$3.run(MavenPomEditor.java:938)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-05-05 22:02:45.169
+!MESSAGE The POM for org.nd4j:${nd4j.backend}:jar:0.9.1 is missing, no dependency information available
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 22:02:47.544
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 22:02:47.551
+!MESSAGE classpath=164 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 22:02:47.557
+!MESSAGE buffering callback sts4.classpath.aCYQKfpA Proyecto_ssdd false 163
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 22:02:47.558
+!MESSAGE executing callback sts4.classpath.aCYQKfpA 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 22:02:47.568
+!MESSAGE executing callback sts4.classpath.aCYQKfpA SUCCESS [done]
+
+!ENTRY org.eclipse.m2e.jdt 4 -1 2021-05-05 22:02:48.133
+!MESSAGE Could not download sources or javadoc
+!SUBENTRY 1 org.eclipse.m2e.core 4 0 2021-05-05 22:02:48.133
+!MESSAGE Could not read maven project
+!SUBENTRY 2 org.eclipse.m2e.core 4 0 2021-05-05 22:02:48.133
+!MESSAGE Some problems were encountered while processing the POMs:
+[ERROR] 'dependencies.dependency.artifactId' for org.nd4j:${nd4j.backend}:jar with value '${nd4j.backend}' does not match a valid id pattern. @ line 68, column 19
+
+!STACK 0
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[ERROR] 'dependencies.dependency.artifactId' for org.nd4j:${nd4j.backend}:jar with value '${nd4j.backend}' does not match a valid id pattern. @ line 68, column 19
+
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readMavenProjects(MavenImpl.java:676)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$13(ProjectRegistryManager.java:870)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:153)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:101)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.execute(ProjectRegistryManager.java:1027)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:866)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:835)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:1069)
+	at com.google.common.cache.LocalCache$LocalManualCache$1.load(LocalCache.java:4878)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3529)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2278)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2155)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2045)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3953)
+	at com.google.common.cache.LocalCache$LocalManualCache.get(LocalCache.java:4873)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.getMavenProject(ProjectRegistryManager.java:1068)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectFacade.getMavenProject(MavenProjectFacade.java:243)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:265)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:233)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:161)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:153)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:101)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1374)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:161)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 22:03:14.129
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 22:03:14.134
+!MESSAGE classpath=182 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 22:03:14.139
+!MESSAGE buffering callback sts4.classpath.aCYQKfpA Proyecto_ssdd false 182
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 22:03:14.140
+!MESSAGE executing callback sts4.classpath.aCYQKfpA 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 22:03:14.151
+!MESSAGE executing callback sts4.classpath.aCYQKfpA SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 22:03:17.567
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 22:03:17.572
+!MESSAGE classpath=182 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 22:03:17.577
+!MESSAGE buffering callback sts4.classpath.aCYQKfpA Proyecto_ssdd false 182
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 22:03:17.577
+!MESSAGE executing callback sts4.classpath.aCYQKfpA 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 22:03:17.586
+!MESSAGE executing callback sts4.classpath.aCYQKfpA SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 22:03:24.171
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 22:03:24.177
+!MESSAGE classpath=184 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 22:03:24.184
+!MESSAGE buffering callback sts4.classpath.aCYQKfpA Proyecto_ssdd false 184
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 22:03:24.184
+!MESSAGE executing callback sts4.classpath.aCYQKfpA 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-05 22:03:24.192
+!MESSAGE executing callback sts4.classpath.aCYQKfpA SUCCESS [done]
+
+!ENTRY org.eclipse.lsp4e 2 0 2021-05-05 22:30:56.956
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:385)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2086)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)

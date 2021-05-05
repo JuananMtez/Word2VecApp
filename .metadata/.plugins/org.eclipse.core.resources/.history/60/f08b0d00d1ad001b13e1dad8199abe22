@@ -1,0 +1,44 @@
+package um.ssdd.proyecto_ssdd.Spring.Entities;
+
+import org.bson.types.Binary;
+import org.springframework.data.annotation.Id;
+
+public class Entrenamiento {
+	
+	@Id
+	private String TID;
+	
+	
+	private Binary fichero;
+	
+	
+	
+	public Entrenamiento() {}
+
+
+
+	public String getTID() {
+		return TID;
+	}
+
+	public void setTID(String tID) {
+		TID = tID;
+	}
+
+
+
+	public Binary getFichero() {
+		return fichero;
+	}
+
+
+
+	public void setFichero(Binary fichero) {
+		this.fichero = fichero;
+	}
+	
+	
+	
+	
+
+}
