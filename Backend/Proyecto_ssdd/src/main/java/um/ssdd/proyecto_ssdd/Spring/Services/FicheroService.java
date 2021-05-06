@@ -2,11 +2,13 @@ package um.ssdd.proyecto_ssdd.Spring.Services;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
+import java.io.File;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.nio.charset.Charset;
 import java.security.SecureRandom;
+import java.util.Collection;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -23,6 +25,8 @@ import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
+
+import com.google.common.io.Files;
 
 import um.ssdd.proyecto_ssdd.Spring.Entities.Entrenamiento;
 import um.ssdd.proyecto_ssdd.Spring.Entities.Fichero;
@@ -123,6 +127,10 @@ public class FicheroService {
 		Usuario usuario = usuarioRepository.findById(id).orElse(null);
 		if (ficheroRepository.findByUserIdAndFid(id, fid) != null && usuario != null) {
 
+			Fichero fichero = ficheroRepository.findByUserIdAndFid(id, fid);
+			
+			if (fichero.getEntrenamiento() != null)
+				entrenamientoRepository.deleteById(fichero.getEntrenamiento().getWID());
 			
 			ficheroRepository.deleteById(fid);
 			
@@ -154,57 +162,9 @@ public class FicheroService {
 	}
 	
 	
-	public URI entrenar(String id, String fid) {
-		
-		
-		Fichero fichero = ficheroRepository.findByUserIdAndFid(id, fid);
-		
-		if (fichero != null) {
-			
-			if (fichero.getTID().equals("") || fichero.getEntrenamiento() == null) {
-				
-				
-				Entrenamiento entrenamiento = null;
-				try {
-					entrenamiento = word2vecTrain(fichero);
-				} catch (IOException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-		        fichero.setEntrenamiento(entrenamiento);
-		        
-		        SecureRandom random = new SecureRandom();
-				int num = random.nextInt(100000);
-				
-				
-				ficheroRepository.save(fichero);
-				
-				entrenamientoRepository.save(entrenamiento);
-				
-				
-			
-		        
-		        try {
-					return new URI(String.format("%05d", num));
-				} catch (URISyntaxException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}		
-				
-			}
-			
-		}
-		
-		return null;
-		
-		
-		
-		
-		
-		
-		
-		
-	}
+	
+
+
 	
 	public boolean fileNameRepeated(String id, MultipartFile file) {
 		return ficheroRepository.findByUserIdAndFileName(id, file.getOriginalFilename()) != null;
@@ -216,33 +176,6 @@ public class FicheroService {
 	
 	
 	
-	private Entrenamiento word2vecTrain(Fichero fichero) throws IOException {
-		
-		SentenceIterator iter = new BasicLineIterator(new ByteArrayInputStream(fichero.getFichero().getData()));
-        TokenizerFactory t = new DefaultTokenizerFactory();
 
-        t.setTokenPreProcessor(new CommonPreprocessor());
-
-        Word2Vec vec = new Word2Vec.Builder()
-                .minWordFrequency(5)
-                .iterations(1)
-                .layerSize(100)
-                .seed(42)
-                .windowSize(5)
-                .iterate(iter)
-                .tokenizerFactory(t)
-                .build();
-
-        vec.fit();
-
-
-        ByteArrayOutputStream out = new ByteArrayOutputStream(100*1024);
-        
-        WordVectorSerializer.writeWord2VecModel(vec, out);
-        
-        return new Entrenamiento(new Binary(BsonBinarySubType.BINARY, out.toByteArray()));
-        
-		
-	}
 	
 }

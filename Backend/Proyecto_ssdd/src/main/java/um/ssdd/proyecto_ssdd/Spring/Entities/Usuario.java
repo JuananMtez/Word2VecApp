@@ -3,6 +3,7 @@ package um.ssdd.proyecto_ssdd.Spring.Entities;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -290,6 +291,27 @@ public class Usuario {
 
 	public void setConfirmado(boolean confirmado) {
 		this.confirmado = confirmado;
+	}
+	
+	public List<Entrenamiento> getAllEntrenamientos() {
+		
+		return ficheros.stream().map(f -> f.getEntrenamiento()).collect(Collectors.toList());
+	}
+	
+	public void modificarFichero(Fichero fichero) {
+		
+		Iterator<Fichero> iterator = ficheros.iterator();
+		boolean removed = false;
+		while (!removed && iterator.hasNext()) {
+			Fichero f = iterator.next();
+			
+			if (fichero.getFID().equals(f.getFID())) {
+				iterator.remove();
+				removed = true;
+			}
+		}
+		
+		ficheros.add(fichero);
 	}
 	
 	

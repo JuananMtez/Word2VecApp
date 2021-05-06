@@ -11,11 +11,14 @@ public class Entrenamiento {
 	@Id
 	private String WID;
 	
+	
+	private String nombreFichero;
+	
 	private Binary entrenamiento;
 	
 	
-	public Entrenamiento(Binary entrenamiento) {
-		WID = "";
+	public Entrenamiento(String nombreFichero, Binary entrenamiento) {
+		this.nombreFichero = nombreFichero;
 		this.entrenamiento = entrenamiento;
 	}
 	
@@ -40,6 +43,16 @@ public class Entrenamiento {
 	public void setEntrenamiento(Binary entrenamiento) {
 		this.entrenamiento = entrenamiento;
 	}
+
+	public String getNombreFichero() {
+		return nombreFichero;
+	}
+
+	public void setNombreFichero(String nombreFichero) {
+		this.nombreFichero = nombreFichero;
+	}
+	
+	
 
 
 

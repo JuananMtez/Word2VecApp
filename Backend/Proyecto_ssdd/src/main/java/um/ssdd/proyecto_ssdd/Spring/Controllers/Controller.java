@@ -18,10 +18,13 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
+import um.ssdd.proyecto_ssdd.Spring.Services.EntrenamientoService;
 import um.ssdd.proyecto_ssdd.Spring.Services.FicheroService;
 import um.ssdd.proyecto_ssdd.Spring.Services.UsuarioService;
 import um.ssdd.proyecto_ssdd.Spring.Services.DTOs.CodigoDTO;
+import um.ssdd.proyecto_ssdd.Spring.Services.DTOs.EntrenamientoDTO;
 import um.ssdd.proyecto_ssdd.Spring.Services.DTOs.FicheroDTO;
+import um.ssdd.proyecto_ssdd.Spring.Services.DTOs.PalabrasDTO;
 import um.ssdd.proyecto_ssdd.Spring.Services.DTOs.UsuarioLogin;
 import um.ssdd.proyecto_ssdd.Spring.Services.DTOs.UsuarioPost;
 import um.ssdd.proyecto_ssdd.Spring.Services.DTOs.UsuarioPut;
@@ -38,6 +41,9 @@ public class Controller {
 	
 	@Autowired
 	private FicheroService ficheroService;
+	
+	@Autowired
+	private EntrenamientoService entrenamientoService;
 	
 	@GetMapping
 	public ResponseEntity<List<UsuarioResponse>> getAllUsuarios() {
@@ -236,10 +242,16 @@ public class Controller {
 	
 	// Entrenamiento
 	
-	@GetMapping("/{id}/train/{fid}")
+	@GetMapping("/{id}/trains")
+	public ResponseEntity<List<EntrenamientoDTO>> getAllEntrenamientosUsuario(@PathVariable("id") String id) {	
+		return ResponseEntity.ok(entrenamientoService.getAll(id));
+	}
+	
+	
+	@PostMapping("/{id}/train/{fid}")
 	public ResponseEntity<String> entrenarFichero(@PathVariable("id") String id, @PathVariable("fid") String fid) {
 		
-		URI uri = ficheroService.entrenar(id, fid);
+		URI uri = entrenamientoService.entrenar(id, fid);
 		
 		if (uri != null)
 			return ResponseEntity.created(uri).build();
@@ -247,9 +259,24 @@ public class Controller {
 		
 		return ResponseEntity.badRequest().build();
 			
+	}
+	
+	@GetMapping("/{id}/train/{wid}")
+	public ResponseEntity<PalabrasDTO> entrenado(@PathVariable("id") String id, @PathVariable("wid") String wid, @RequestParam String word) {
 		
+		PalabrasDTO a = entrenamientoService.entrenado(wid, word);
+		
+		if (a != null)
+			return ResponseEntity.ok(a);
+		return ResponseEntity.notFound().build();
 		
 	}
+	
+	
+	
+	
+	
+	
 	
 	
 	
