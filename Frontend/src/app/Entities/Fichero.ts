@@ -4,7 +4,7 @@ export class Fichero {
   usuarioId: string;
   fileName: string;
   vecesLeido: string;
-  entrenamientoTID: string;
+  tid: string;
 
 
 }

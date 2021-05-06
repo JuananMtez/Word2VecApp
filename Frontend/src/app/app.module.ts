@@ -19,6 +19,7 @@ import { FicheroService } from './Fichero/fichero.service';
 import { EstadisticasComponent } from './Estadisticas/estadisticas/estadisticas.component';
 import { PerfilComponent } from './Usuario/perfil/perfil.component';
 import { CodeConfirmationComponent } from './Auth/code-confirmation/code-confirmation.component';
+import { ListarEntrenamientosComponent } from './Entrenamiento/listar-entrenamientos/listar-entrenamientos.component';
 
 
 
@@ -35,6 +36,7 @@ import { CodeConfirmationComponent } from './Auth/code-confirmation/code-confirm
     EstadisticasComponent,
     PerfilComponent,
     CodeConfirmationComponent,
+    ListarEntrenamientosComponent,
   ],
   imports: [
     BrowserModule,

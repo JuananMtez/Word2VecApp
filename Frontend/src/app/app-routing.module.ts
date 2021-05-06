@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CodeConfirmationComponent } from './Auth/code-confirmation/code-confirmation.component';
 import { LoginComponent } from './Auth/login/login.component';
 import { RegisterComponent } from './Auth/register/register.component';
+import { ListarEntrenamientosComponent } from './Entrenamiento/listar-entrenamientos/listar-entrenamientos.component';
 import { EstadisticasComponent } from './Estadisticas/estadisticas/estadisticas.component';
 import { GetFicheroComponent } from './Fichero/get-fichero/get-fichero.component';
 import { ListarFicherosComponent } from './Fichero/listar-ficheros/listar-ficheros.component';
@@ -21,7 +22,7 @@ const routes: Routes = [
   { path: 'usuario/estadisticas', component: EstadisticasComponent},
   { path: 'usuario/perfil', component: PerfilComponent},
   { path: 'register/code', component: CodeConfirmationComponent},
-
+  { path: 'entrenamientos/listar', component: ListarEntrenamientosComponent},
 
 ];
 

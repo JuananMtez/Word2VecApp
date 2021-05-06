@@ -1,0 +1,36 @@
+package um.ssdd.proyecto_ssdd.Spring.Services;
+
+import java.util.List;
+import java.util.stream.Collectors;
+
+import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import um.ssdd.proyecto_ssdd.Spring.Entities.Entrenamiento;
+import um.ssdd.proyecto_ssdd.Spring.Entities.Fichero;
+import um.ssdd.proyecto_ssdd.Spring.Repositories.IEntrenamientoRepository;
+import um.ssdd.proyecto_ssdd.Spring.Services.DTOs.EntrenamientoDTO;
+import um.ssdd.proyecto_ssdd.Spring.Services.DTOs.FicheroDTO;
+import um.ssdd.proyecto_ssdd.Spring.Services.DTOs.UsuarioResponse;
+
+@Service
+public class EntrenamientoService {
+	
+	@Autowired
+	private IEntrenamientoRepository entrenamientoRepository;
+	
+	@Autowired
+	public ModelMapper modelMapper;
+	
+	public List<EntrenamientoDTO> getAll() {
+		return entrenamientoRepository.findAll().stream().map(this::entityToResponse).collect(Collectors.toList());
+	}
+	
+	
+	private EntrenamientoDTO entityToResponse(Entrenamiento entrenamiento) {		
+		return modelMapper.map(entrenamiento, EntrenamientoDTO.class);
+	}
+	
+
+}

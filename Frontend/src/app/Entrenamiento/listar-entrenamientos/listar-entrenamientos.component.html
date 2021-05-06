@@ -1,0 +1,31 @@
+<div class="container-sm">
+  <div class="card">
+    <div class="card-header mt-3">
+      <h3>Entrenamientos realizados</h3>
+    </div>
+    <div class="card-body">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+
+            <th class="text-center">WID</th>
+            <th class="text-center">Nombre del fichero</th>
+            <th class="text-center">Palabra</th>
+            <th class="text-center">Acción</th>
+
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let entrenamiento of entrenamientos" class="text-center">
+            <td class="text-center">{{entrenamiento.wid}}</td>
+            <td class="text-center">{{entrenamiento.nombreFichero}}</td>
+            <td><input type="text" class="form-control" id="recipient-name" [(ngModel)]=palabra ></td>
+            <td><button (click)="enviar(entrenamiento.wid)" type="button" class="btn btn-outline-primary btn-lg btn-block">Ejecutar</button></td>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+

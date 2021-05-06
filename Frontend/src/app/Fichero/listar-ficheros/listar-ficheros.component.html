@@ -20,7 +20,7 @@
             <td class="text-center">{{fichero.vecesLeido}}</td>
             <td>
               <button (click)="entrenar(fichero.fid)"*ngIf="!hayEntrenamiento(fichero)"class="btn btn-outline-secondary mr-2">Entrenar</button>
-              <button *ngIf="hayEntrenamiento(fichero)"class="btn btn-outline-secondary mr-2">Ver Entrenamiento</button>
+              <button routerLink="/entrenamientos/listar" *ngIf="hayEntrenamiento(fichero)"class="btn btn-outline-secondary mr-2">Ver Entrenamiento</button>
 
               <button (click)="verContenidoFichero(fichero)" class="btn btn-outline-primary mr-2">Ver Contenido</button>
               <button (click)="eliminarFichero(fichero)" class="btn btn-outline-danger">Eliminar</button>

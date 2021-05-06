@@ -17,6 +17,22 @@
     <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="javax.mail.MessagingException"/>
     <fullyQualifiedTypeName name="um.ssdd.proyecto_ssdd.Spring.Services.DTOs.UsuarioLogin"/>
-    <fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
+    <fullyQualifiedTypeName name="org.deeplearning4j.text.sentenceiterator.SentenceIterator"/>
+    <fullyQualifiedTypeName name="org.deeplearning4j.text.tokenization.tokenizerfactory.DefaultTokenizerFactory"/>
+    <fullyQualifiedTypeName name="org.deeplearning4j.text.tokenization.tokenizer.preprocessor.CommonPreprocessor"/>
+    <fullyQualifiedTypeName name="org.deeplearning4j.models.word2vec.Word2Vec"/>
+    <fullyQualifiedTypeName name="org.deeplearning4j.text.tokenization.tokenizerfactory.TokenizerFactory"/>
+    <fullyQualifiedTypeName name="java.io.ByteArrayOutputStream"/>
+    <fullyQualifiedTypeName name="org.deeplearning4j.models.embeddings.loader.WordVectorSerializer"/>
+    <fullyQualifiedTypeName name="org.deeplearning4j.text.sentenceiterator.BasicLineIterator"/>
+    <fullyQualifiedTypeName name="java.io.ByteArrayInputStream"/>
+    <fullyQualifiedTypeName name="java.net.URI"/>
+    <fullyQualifiedTypeName name="um.ssdd.proyecto_ssdd.Spring.Repositories.IEntrenamientoRepository"/>
+    <fullyQualifiedTypeName name="um.ssdd.proyecto_ssdd.Spring.Entities.Entrenamiento"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="java.nio.file.Files"/>
+    <fullyQualifiedTypeName name="com.google.common.io.Files"/>
+    <fullyQualifiedTypeName name="java.util.Collection"/>
+    <fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
 </qualifiedTypeNameHistroy>

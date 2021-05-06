@@ -29,7 +29,6 @@ export class ListarFicherosComponent implements OnInit {
     this.ficheroService.getAll()
     .subscribe(data => {
       this.ficheros = data;
-
     })
 
 
@@ -120,9 +119,8 @@ export class ListarFicherosComponent implements OnInit {
     this.entrenamientoService.entrenar(fid)
     .subscribe(data => {
 
-
-
-
+      alert("Fichero entrenado correctamente")
+      location.reload();
 
     }, error => {
 
@@ -132,7 +130,7 @@ export class ListarFicherosComponent implements OnInit {
 
   hayEntrenamiento(fichero: Fichero) {
 
-    return fichero.entrenamientoTID != null
+    return fichero.tid != ""
 
 
   }
