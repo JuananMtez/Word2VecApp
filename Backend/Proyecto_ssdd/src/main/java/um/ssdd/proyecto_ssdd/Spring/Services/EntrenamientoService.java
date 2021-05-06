@@ -57,14 +57,13 @@ public class EntrenamientoService {
 		Usuario u = usuarioRepository.findById(id).orElse(null);
 		
 		if (u != null) {
-			
-			Fichero fichero = ficheroRepository.findByUserIdAndFid(id, u.getFicheros().get(0).getFID());
-			
+					
 			
 			u.addPeticionSoporteFront();
 			usuarioRepository.save(u);
 			
-			return u.getAllEntrenamientos().stream().map(this::entityToResponse).collect(Collectors.toList());
+			if (u.getAllEntrenamientos().size() > 0)
+				return u.getAllEntrenamientos().stream().map(this::entityToResponse).collect(Collectors.toList());
 		}
 		
 		return null;
