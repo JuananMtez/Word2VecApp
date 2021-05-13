@@ -46,7 +46,13 @@ export class ListarEntrenamientosComponent implements OnInit {
     this.entrenamientoService.entrenado(wid, this.palabra)
     .subscribe(data => {
       this.palabrasDTO = data;
+      this.usuario = this.authService.currentUserValue;
+      this.usuario.peticionesWord2VecUse++;
+      this.usuario.palabrasConsultadas++;
+      this.authService.updateUser(this.usuario);
+
       alert(this.palabrasDTO.palabras);
+
     })
 
   }
