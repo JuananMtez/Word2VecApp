@@ -1,23 +1,26 @@
-package um.ssdd.proyecto_ssdd.Spring.Services.DTOs;
+package um.ssdd.proyecto_ssdd.DTOs;
 
 import java.io.Serializable;
-import java.util.List;
 
-import um.ssdd.proyecto_ssdd.Spring.Entities.Fichero;
+public class UsuarioPut implements Serializable {
 
-public class UsuarioPost implements Serializable {
-
-
+	/**
+	 * 
+	 */
 	private static final long serialVersionUID = 1L;
+	private String id;
 	private String user;
 	private String password;
 	private String nombre;
 	private String apellidos;
-	private String correoElectronico;
 
-	
-	
-	
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
 
 	public String getUser() {
 		return user;
@@ -49,20 +52,6 @@ public class UsuarioPost implements Serializable {
 
 	public void setApellidos(String apellidos) {
 		this.apellidos = apellidos;
-	}
-
-
-	
-	public String getCorreoElectronico() {
-		return correoElectronico;
-	}
-
-	public void setCorreoElectronico(String correoElectronico) {
-		this.correoElectronico = correoElectronico;
-	}
-
-	public static long getSerialversionuid() {
-		return serialVersionUID;
 	}
 
 }

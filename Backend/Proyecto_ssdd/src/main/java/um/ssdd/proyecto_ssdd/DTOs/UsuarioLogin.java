@@ -1,4 +1,4 @@
-package um.ssdd.proyecto_ssdd.Spring.Services.DTOs;
+package um.ssdd.proyecto_ssdd.DTOs;
 
 import java.io.Serializable;
 

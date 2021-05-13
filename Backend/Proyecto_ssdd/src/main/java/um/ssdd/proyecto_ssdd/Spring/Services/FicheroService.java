@@ -1,40 +1,30 @@
 package um.ssdd.proyecto_ssdd.Spring.Services;
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.File;
+
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.nio.charset.Charset;
-import java.security.SecureRandom;
-import java.util.Collection;
+
 import java.util.List;
 import java.util.stream.Collectors;
 
 import org.bson.BsonBinarySubType;
 import org.bson.types.Binary;
-import org.deeplearning4j.models.embeddings.loader.WordVectorSerializer;
-import org.deeplearning4j.models.word2vec.Word2Vec;
-import org.deeplearning4j.text.sentenceiterator.BasicLineIterator;
-import org.deeplearning4j.text.sentenceiterator.SentenceIterator;
-import org.deeplearning4j.text.tokenization.tokenizer.preprocessor.CommonPreprocessor;
-import org.deeplearning4j.text.tokenization.tokenizerfactory.DefaultTokenizerFactory;
-import org.deeplearning4j.text.tokenization.tokenizerfactory.TokenizerFactory;
+
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.google.common.io.Files;
 
-import um.ssdd.proyecto_ssdd.Spring.Entities.Entrenamiento;
-import um.ssdd.proyecto_ssdd.Spring.Entities.Fichero;
-import um.ssdd.proyecto_ssdd.Spring.Entities.Usuario;
+import um.ssdd.proyecto_ssdd.DTOs.FicheroDTO;
+
+import um.ssdd.proyecto_ssdd.Entities.Fichero;
+import um.ssdd.proyecto_ssdd.Entities.Usuario;
 import um.ssdd.proyecto_ssdd.Spring.Repositories.IEntrenamientoRepository;
 import um.ssdd.proyecto_ssdd.Spring.Repositories.IFicheroRepository;
 import um.ssdd.proyecto_ssdd.Spring.Repositories.IUsuarioRepository;
-import um.ssdd.proyecto_ssdd.Spring.Services.DTOs.FicheroDTO;
 
 
 @Service

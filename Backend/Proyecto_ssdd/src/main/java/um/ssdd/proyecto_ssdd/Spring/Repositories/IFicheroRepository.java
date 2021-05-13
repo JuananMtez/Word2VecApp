@@ -4,10 +4,8 @@ import java.util.List;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
-import org.springframework.stereotype.Repository;
 
-import um.ssdd.proyecto_ssdd.Spring.Entities.Fichero;
-import um.ssdd.proyecto_ssdd.Spring.Entities.Usuario;
+import um.ssdd.proyecto_ssdd.Entities.Fichero;
 
 public interface IFicheroRepository extends MongoRepository<Fichero, String> {
 

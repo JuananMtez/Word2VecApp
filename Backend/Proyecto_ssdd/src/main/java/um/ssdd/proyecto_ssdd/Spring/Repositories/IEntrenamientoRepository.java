@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
 
-import um.ssdd.proyecto_ssdd.Spring.Entities.Entrenamiento;
+import um.ssdd.proyecto_ssdd.Entities.Entrenamiento;
 
 public interface IEntrenamientoRepository extends MongoRepository<Entrenamiento, String> {
 

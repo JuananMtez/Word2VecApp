@@ -1,9 +1,14 @@
-package um.ssdd.proyecto_ssdd.Spring.Services.DTOs;
+package um.ssdd.proyecto_ssdd.DTOs;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
 public class PalabrasDTO {
 	
 	
 	private String palabras;
+	
+	public PalabrasDTO() {}
 
 	
 	public PalabrasDTO(String palabras) {

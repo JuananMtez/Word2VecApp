@@ -1,7 +1,6 @@
-package um.ssdd.proyecto_ssdd.Spring.Services.DTOs;
+package um.ssdd.proyecto_ssdd.DTOs;
 
 import java.io.Serializable;
-import java.util.List;
 
 public class FicheroDTO implements Serializable {
 

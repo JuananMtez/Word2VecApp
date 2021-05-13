@@ -1,4 +1,4 @@
-package um.ssdd.proyecto_ssdd.Spring.Entities;
+package um.ssdd.proyecto_ssdd.Entities;
 
 import java.util.ArrayList;
 import java.util.Iterator;

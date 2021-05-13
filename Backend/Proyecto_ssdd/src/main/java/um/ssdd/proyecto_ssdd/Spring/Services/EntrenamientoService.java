@@ -26,14 +26,14 @@ import org.springframework.stereotype.Service;
 
 import com.google.common.io.Files;
 
-import um.ssdd.proyecto_ssdd.Spring.Entities.Entrenamiento;
-import um.ssdd.proyecto_ssdd.Spring.Entities.Fichero;
-import um.ssdd.proyecto_ssdd.Spring.Entities.Usuario;
+import um.ssdd.proyecto_ssdd.DTOs.EntrenamientoDTO;
+import um.ssdd.proyecto_ssdd.DTOs.PalabrasDTO;
+import um.ssdd.proyecto_ssdd.Entities.Entrenamiento;
+import um.ssdd.proyecto_ssdd.Entities.Fichero;
+import um.ssdd.proyecto_ssdd.Entities.Usuario;
 import um.ssdd.proyecto_ssdd.Spring.Repositories.IEntrenamientoRepository;
 import um.ssdd.proyecto_ssdd.Spring.Repositories.IFicheroRepository;
 import um.ssdd.proyecto_ssdd.Spring.Repositories.IUsuarioRepository;
-import um.ssdd.proyecto_ssdd.Spring.Services.DTOs.EntrenamientoDTO;
-import um.ssdd.proyecto_ssdd.Spring.Services.DTOs.PalabrasDTO;
 
 
 @Service

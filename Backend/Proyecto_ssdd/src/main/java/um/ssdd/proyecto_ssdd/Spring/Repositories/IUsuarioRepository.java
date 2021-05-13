@@ -5,7 +5,7 @@ import org.springframework.data.mongodb.repository.Query;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import um.ssdd.proyecto_ssdd.Spring.Entities.Usuario;
+import um.ssdd.proyecto_ssdd.Entities.Usuario;
 
 @Repository
 @Transactional

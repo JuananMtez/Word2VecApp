@@ -18,17 +18,17 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
+import um.ssdd.proyecto_ssdd.DTOs.CodigoDTO;
+import um.ssdd.proyecto_ssdd.DTOs.EntrenamientoDTO;
+import um.ssdd.proyecto_ssdd.DTOs.FicheroDTO;
+import um.ssdd.proyecto_ssdd.DTOs.PalabrasDTO;
+import um.ssdd.proyecto_ssdd.DTOs.UsuarioLogin;
+import um.ssdd.proyecto_ssdd.DTOs.UsuarioPost;
+import um.ssdd.proyecto_ssdd.DTOs.UsuarioPut;
+import um.ssdd.proyecto_ssdd.DTOs.UsuarioResponse;
 import um.ssdd.proyecto_ssdd.Spring.Services.EntrenamientoService;
 import um.ssdd.proyecto_ssdd.Spring.Services.FicheroService;
 import um.ssdd.proyecto_ssdd.Spring.Services.UsuarioService;
-import um.ssdd.proyecto_ssdd.Spring.Services.DTOs.CodigoDTO;
-import um.ssdd.proyecto_ssdd.Spring.Services.DTOs.EntrenamientoDTO;
-import um.ssdd.proyecto_ssdd.Spring.Services.DTOs.FicheroDTO;
-import um.ssdd.proyecto_ssdd.Spring.Services.DTOs.PalabrasDTO;
-import um.ssdd.proyecto_ssdd.Spring.Services.DTOs.UsuarioLogin;
-import um.ssdd.proyecto_ssdd.Spring.Services.DTOs.UsuarioPost;
-import um.ssdd.proyecto_ssdd.Spring.Services.DTOs.UsuarioPut;
-import um.ssdd.proyecto_ssdd.Spring.Services.DTOs.UsuarioResponse;
 
 
 @CrossOrigin(origins = "http://localhost:4200", maxAge =3600)

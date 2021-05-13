@@ -1,37 +1,32 @@
 package um.ssdd.proyecto_ssdd.Spring.Services;
 
-import java.io.IOException;
 import java.security.SecureRandom;
 import java.util.List;
 import java.util.Properties;
 import java.util.stream.Collectors;
 
 import javax.mail.Authenticator;
-import javax.mail.BodyPart;
 import javax.mail.Message;
 import javax.mail.MessagingException;
-import javax.mail.Multipart;
 import javax.mail.PasswordAuthentication;
 import javax.mail.Session;
 import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
-import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
-import javax.mail.internet.MimeMultipart;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import um.ssdd.proyecto_ssdd.Spring.Entities.Fichero;
-import um.ssdd.proyecto_ssdd.Spring.Entities.Usuario;
+import um.ssdd.proyecto_ssdd.DTOs.CodigoDTO;
+import um.ssdd.proyecto_ssdd.DTOs.UsuarioLogin;
+import um.ssdd.proyecto_ssdd.DTOs.UsuarioPost;
+import um.ssdd.proyecto_ssdd.DTOs.UsuarioPut;
+import um.ssdd.proyecto_ssdd.DTOs.UsuarioResponse;
+import um.ssdd.proyecto_ssdd.Entities.Fichero;
+import um.ssdd.proyecto_ssdd.Entities.Usuario;
 import um.ssdd.proyecto_ssdd.Spring.Repositories.IFicheroRepository;
 import um.ssdd.proyecto_ssdd.Spring.Repositories.IUsuarioRepository;
-import um.ssdd.proyecto_ssdd.Spring.Services.DTOs.CodigoDTO;
-import um.ssdd.proyecto_ssdd.Spring.Services.DTOs.UsuarioLogin;
-import um.ssdd.proyecto_ssdd.Spring.Services.DTOs.UsuarioPost;
-import um.ssdd.proyecto_ssdd.Spring.Services.DTOs.UsuarioPut;
-import um.ssdd.proyecto_ssdd.Spring.Services.DTOs.UsuarioResponse;
 
 
 

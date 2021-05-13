@@ -1,4 +1,4 @@
-package um.ssdd.proyecto_ssdd.Spring.Entities;
+package um.ssdd.proyecto_ssdd.Entities;
 
 import org.bson.types.Binary;
 import org.springframework.data.annotation.Id;
