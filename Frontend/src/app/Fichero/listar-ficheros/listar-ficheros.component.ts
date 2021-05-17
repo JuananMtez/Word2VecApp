@@ -129,11 +129,23 @@ export class ListarFicherosComponent implements OnInit {
       this.authService.updateUser(this.usuario);
       //alert("Fichero entrenado correctamente")
 
-      location.reload();
+      this.ficheroService.get(fichero.fid).subscribe(data => {
+
+        let cambiado = false;
+        let i = 0;
+        while (i < this.ficheros.length && !cambiado) {
+          if (this.ficheros[i].fid == fichero.fid) {
+            this.ficheros[i] = data;
+            cambiado = true;
+          }
+          i++;
+        }
+      })
 
     }, error => {
 
     })
+
 
   }
 
@@ -158,9 +170,12 @@ export class ListarFicherosComponent implements OnInit {
           this.ficheros[i] = data;
           if (data.entrenamientoWID != null)
             alert("El entrenamiento se ha realizado correctamente");
+          else
+            alert("El entrenamiento todavía no se ha completado")
           cambiado = true;
 
         }
+        i++;
       }
 
 
