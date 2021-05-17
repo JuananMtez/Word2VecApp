@@ -314,7 +314,9 @@ public class Usuario {
 		ficheros.add(fichero);
 	}
 	
-	
+	public void addPeticionesTrain() {
+		peticionesWord2VecTrain++;
+	}
 	
 	
 	

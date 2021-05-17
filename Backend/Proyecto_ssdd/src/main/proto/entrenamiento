@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+
+option java_multiple_files = true;
+option java_package = "um.ssdd.proyecto_ssdd.grpc.Entrenamiento";
+
+package Entrenamiento;
+
+message Entrenamiento {
+	string id = 1;
+}
+
+message CrearEntrenamientoRequest {
+	Entrenamiento entrenamiento = 1;
+}
+
+message CrearEntrenamientoResponse {
+	Entrenamiento entrenamiento = 1;
+}
+
+service Entrenamiento {
+	rpc Entrenar(CrearEntrenamientoRequest) returns (CrearEntrenamientoResponse) {};
+}

@@ -14,8 +14,32 @@
 	<name>ProyectoSSDD</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
+	<!-- Change the nd4j.backend property to nd4j-cuda-7.5-platform or nd4j-cuda-8.0-platform to use CUDA GPUs -->
+	    <nd4j.backend>nd4j-native-platform</nd4j.backend>
+	    <!--<nd4j.backend>nd4j-cuda-8.0-platform</nd4j.backend>-->
+	    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	    <shadedClassifier>bin</shadedClassifier>
 		<java.version>11</java.version>
+		<logback.version>1.1.7</logback.version>
+	    <nd4j.version>0.9.1</nd4j.version>
+	    <dl4j.version>0.9.1</dl4j.version>
+	    <datavec.version>0.9.1</datavec.version>
+	    <arbiter.version>0.9.1</arbiter.version>
+	    <rl4j.version>0.9.1</rl4j.version>
+	    <maven.compiler.source>1.8</maven.compiler.source>
+	    <maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
+	
+	<dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.nd4j</groupId>
+        <artifactId>nd4j-native-platform</artifactId>
+        <version>${nd4j.version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+	
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -37,7 +61,73 @@
 			<artifactId>modelmapper</artifactId>
 			<version>2.3.9</version>
 		</dependency>
+		
+		<dependency>
+    		<groupId>com.sun.mail</groupId>
+    		<artifactId>javax.mail</artifactId>
+   			<version>1.6.2</version>
+		</dependency>
+		
+		<dependency>
+      		<groupId>org.nd4j</groupId>
+		    <artifactId>${nd4j.backend}</artifactId>
+		    <version>${nd4j.version}</version>
+    	</dependency>
 
+    <!-- Core DL4J functionality -->
+	    <dependency>
+	      <groupId>org.deeplearning4j</groupId>
+	      <artifactId>deeplearning4j-core</artifactId>
+	      <version>${dl4j.version}</version>
+	    </dependency>
+	
+	    <dependency>
+	      <groupId>org.deeplearning4j</groupId>
+	      <artifactId>deeplearning4j-nlp</artifactId>
+	      <version>${dl4j.version}</version>
+	    </dependency>
+	
+	    <dependency>
+	      <groupId>org.deeplearning4j</groupId>
+	      <artifactId>deeplearning4j-zoo</artifactId>
+	      <version>${dl4j.version}</version>
+	    </dependency>
+	
+	    <dependency>
+	      <groupId>ch.qos.logback</groupId>
+	      <artifactId>logback-classic</artifactId>
+	    </dependency>
+
+	  	<dependency>
+	  		<groupId>com.sun.jersey</groupId>
+	  		<artifactId>jersey-client</artifactId>
+	  		<version>1.19</version>	
+	  	</dependency>
+	  	
+	  	<dependency>
+	  		<groupId>com.sun.jersey</groupId>
+	  		<artifactId>jersey-server</artifactId>
+	  		<version>1.19</version>
+	  	</dependency>
+	  	
+	  	<dependency>
+	  		<groupId>com.sun.jersey</groupId>
+	  		<artifactId>jersey-servlet</artifactId>
+	  		<version>1.19</version>
+	  	</dependency>
+	  	
+	  	<dependency>
+	  		<groupId>com.sun.jersey</groupId>
+	  		<artifactId>jersey-json</artifactId>
+	  		<version>1.19</version>
+	  	</dependency>			
+		
+		<dependency>
+	   		<groupId>org.mongodb</groupId>
+	    	<artifactId>mongo-java-driver</artifactId>
+	    	<version>3.12.8</version>
+		</dependency>
+	
 	</dependencies>
 
 	<build>

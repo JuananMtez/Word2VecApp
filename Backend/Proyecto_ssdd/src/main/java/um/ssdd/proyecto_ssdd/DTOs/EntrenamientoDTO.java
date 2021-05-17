@@ -4,6 +4,11 @@ public class EntrenamientoDTO {
 
 	private String WID;
 	private String nombreFichero;
+	
+	public EntrenamientoDTO( String wID, String nombreFichero ) {
+		this.WID = wID;
+		this.nombreFichero = nombreFichero;
+	}
 
 	public String getWID() {
 		return WID;

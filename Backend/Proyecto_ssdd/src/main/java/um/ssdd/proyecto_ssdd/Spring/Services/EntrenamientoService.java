@@ -34,6 +34,7 @@ import um.ssdd.proyecto_ssdd.Entities.Usuario;
 import um.ssdd.proyecto_ssdd.Spring.Repositories.IEntrenamientoRepository;
 import um.ssdd.proyecto_ssdd.Spring.Repositories.IFicheroRepository;
 import um.ssdd.proyecto_ssdd.Spring.Repositories.IUsuarioRepository;
+import um.ssdd.proyecto_ssdd.grpc.entrenamiento.apps.ClienteEntrenamiento;
 
 
 @Service
@@ -89,18 +90,25 @@ public URI entrenar(String id, String fid) {
 			if (fichero.getTID().equals("") || fichero.getEntrenamiento() == null) {
 				
 				
-				Entrenamiento entrenamiento = null;
+				/*Entrenamiento entrenamiento = null;
 				try {
 					entrenamiento = word2vecTrain(fichero);
 				} catch (IOException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
-				}
-		        
-		        SecureRandom random = new SecureRandom();
-				int num = random.nextInt(100000);
-				String tid = String.format("%05d", num);
+				}*/
+				SecureRandom random = new SecureRandom();
+				int num = random.nextInt(100000000);
+				String tid = String.format("%08d", num);
 				fichero.setTID(tid);
+				ficheroRepository.save(fichero);
+				
+				String[] args = new String[] {"localhost", fid, id};
+				try {
+					ClienteEntrenamiento.main( args );
+				} catch (Exception e1) {
+					e1.printStackTrace();
+				}
 				
 				
 				Usuario u = usuarioRepository.findById(id).orElse(null);
@@ -108,12 +116,12 @@ public URI entrenar(String id, String fid) {
 				
 
 				
-				fichero.setEntrenamiento(entrenamientoRepository.save(entrenamiento));
-				ficheroRepository.save(fichero);
+				//fichero.setEntrenamiento(entrenamientoRepository.save(entrenamiento));
 				
-				u.modificarFichero(fichero);
+				//u.modificarFichero(fichero);
+				u.addPeticionesTrain();
+				u.addPeticionSoporteFront();
 				usuarioRepository.save(u);
-				
 		        try {
 					return new URI(tid);
 				} catch (URISyntaxException e) {
