@@ -156,7 +156,8 @@ export class ListarFicherosComponent implements OnInit {
       while (i < this.ficheros.length && !cambiado) {
         if (this.ficheros[i].fid == fichero.fid) {
           this.ficheros[i] = data;
-          alert("El entrenamiento se ha realizado correctamente");
+          if (data.entrenamientoWID != null)
+            alert("El entrenamiento se ha realizado correctamente");
           cambiado = true;
 
         }
