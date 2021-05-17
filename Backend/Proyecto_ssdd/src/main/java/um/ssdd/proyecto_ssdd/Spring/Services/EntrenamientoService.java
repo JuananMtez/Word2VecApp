@@ -1,7 +1,5 @@
 package um.ssdd.proyecto_ssdd.Spring.Services;
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;
 import java.net.URI;
@@ -11,15 +9,8 @@ import java.util.Collection;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import org.bson.BsonBinarySubType;
-import org.bson.types.Binary;
 import org.deeplearning4j.models.embeddings.loader.WordVectorSerializer;
 import org.deeplearning4j.models.word2vec.Word2Vec;
-import org.deeplearning4j.text.sentenceiterator.BasicLineIterator;
-import org.deeplearning4j.text.sentenceiterator.SentenceIterator;
-import org.deeplearning4j.text.tokenization.tokenizer.preprocessor.CommonPreprocessor;
-import org.deeplearning4j.text.tokenization.tokenizerfactory.DefaultTokenizerFactory;
-import org.deeplearning4j.text.tokenization.tokenizerfactory.TokenizerFactory;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -57,14 +48,14 @@ public class EntrenamientoService {
 		
 		Usuario u = usuarioRepository.findById(id).orElse(null);
 		
-		if (u != null) {
-					
+		if (u != null) {	
 			
 			u.addPeticionSoporteFront();
 			usuarioRepository.save(u);
 			
-			if (u.getAllEntrenamientos().size() > 0)
-				return u.getAllEntrenamientos().stream().map(this::entityToResponse).collect(Collectors.toList());
+			List<Fichero> ficheros = ficheroRepository.findByUserId(u.getId());
+			if (ficheros.size() > 0)
+				return ficheros.stream().filter(f->f.getEntrenamiento() != null).map(f->entityToResponse(f.getEntrenamiento())).collect(Collectors.toList());
 		}
 		
 		return null;
@@ -103,9 +94,9 @@ public URI entrenar(String id, String fid) {
 				fichero.setTID(tid);
 				ficheroRepository.save(fichero);
 				
-				String[] args = new String[] {"localhost", fid, id};
 				try {
-					ClienteEntrenamiento.main( args );
+					ClienteEntrenamiento cliente = new ClienteEntrenamiento("localhost", 50051, fid);
+					cliente.start();
 				} catch (Exception e1) {
 					e1.printStackTrace();
 				}
@@ -162,36 +153,5 @@ public URI entrenar(String id, String fid) {
 	    
 	    return new PalabrasDTO("");
 	}
-
-	
-	private Entrenamiento word2vecTrain(Fichero fichero) throws IOException {
-		
-		SentenceIterator iter = new BasicLineIterator(new ByteArrayInputStream(fichero.getFichero().getData()));
-        TokenizerFactory t = new DefaultTokenizerFactory();
-
-        t.setTokenPreProcessor(new CommonPreprocessor());
-
-        Word2Vec vec = new Word2Vec.Builder()
-                .minWordFrequency(5)
-                .iterations(1)
-                .layerSize(100)
-                .seed(42)
-                .windowSize(5)
-                .iterate(iter)
-                .tokenizerFactory(t)
-                .build();
-
-        vec.fit();
-
-
-        ByteArrayOutputStream out = new ByteArrayOutputStream(100*1024);
-        
-        WordVectorSerializer.writeWord2VecModel(vec, out);
-        
-        return new Entrenamiento(fichero.getFileName(), new Binary(BsonBinarySubType.BINARY, out.toByteArray()));
-        
-		
-	}
-	
 
 }
