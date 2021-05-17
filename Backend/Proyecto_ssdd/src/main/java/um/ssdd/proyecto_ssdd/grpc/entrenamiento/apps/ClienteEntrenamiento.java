@@ -14,21 +14,22 @@ import um.ssdd.proyecto_ssdd.grpc.entrenamiento.CrearEntrenamientoResponse;
 import um.ssdd.proyecto_ssdd.grpc.entrenamiento.Entrenamiento;
 import um.ssdd.proyecto_ssdd.grpc.entrenamiento.EntrenamientoServiceGrpc;
 
-public class ClienteEntrenamiento
+public class ClienteEntrenamiento extends Thread
 {
     private static final Logger logger = Logger.getLogger(ClienteEntrenamiento.class.getName());
 
     private final ManagedChannel channel;
-   // private final EntrenamientoServiceGrpc.EntrenamientoServiceBlockingStub blockingStub;
     private final EntrenamientoServiceGrpc.EntrenamientoServiceStub asyncStub;
+    private final String idFichero;
     
-    public ClienteEntrenamiento(String host, int port)
+    public ClienteEntrenamiento(String host, int port, String fid)
     {
     	channel = ManagedChannelBuilder.forAddress(host, port)
     								   .usePlaintext()
     								   .build();
-    	//blockingStub = EntrenamientoServiceGrpc.newBlockingStub(channel);
     	asyncStub    = EntrenamientoServiceGrpc.newStub(channel);
+    	
+    	idFichero = fid;
     }
     
     public void shutdown() throws InterruptedException
@@ -36,7 +37,7 @@ public class ClienteEntrenamiento
         channel.shutdown().awaitTermination(5, TimeUnit.SECONDS);
     }
     
-    public void Entrenar(String idFichero, String idUsuario)
+    public void Entrenar()
     {
     	logger.info("Solicitando entrenamiento...");
     	Entrenamiento entrenamientoCreado = Entrenamiento.newBuilder()
@@ -46,15 +47,6 @@ public class ClienteEntrenamiento
     	CrearEntrenamientoRequest crearEntrenamientoRequest = CrearEntrenamientoRequest.newBuilder()
     																				   .setEntrenamiento(entrenamientoCreado)
     																				   .build();
-    	/*try
-    	{
-    		CrearEntrenamientoResponse crearEntrenamientoResponse = blockingStub.entrenar(crearEntrenamientoRequest);
-    		logger.info("TID: " + crearEntrenamientoResponse.toString());
-    	} catch (StatusRuntimeException e)
-    	{
-    		logger.log(Level.WARNING, "RPC failed: {0}", e.getStatus());
-    		return;
-    	}*/
     	
     	try
     	{
@@ -65,12 +57,14 @@ public class ClienteEntrenamiento
                 @Override
                 public void onError(Throwable t)
                 {
-                    finishLatch.countDown();
+                	logger.info(t.toString());
+                	finishLatch.countDown();
                 }
 
                 @Override
                 public void onCompleted()
                 {
+                	logger.info("Completed");
                     finishLatch.countDown();
                 }
 
@@ -98,18 +92,18 @@ public class ClienteEntrenamiento
         }
     }
     
-    public static void main(String[] args) throws Exception
+    public void run()
     {
-    	if ( args.length == 3 )
+    	try
     	{
-	    	ClienteEntrenamiento cliente = new ClienteEntrenamiento(args[0], 50051);
-	    	try
-	    	{
-	    		cliente.Entrenar(args[1], args[2]);
-	    	} finally 
-	    	{
-	    		cliente.shutdown();
-	    	}
+    		this.Entrenar();
+    	} finally 
+    	{
+    		try {
+				this.shutdown();
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
     	}
     }
 }
