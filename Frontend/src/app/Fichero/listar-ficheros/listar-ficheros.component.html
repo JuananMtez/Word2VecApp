@@ -19,8 +19,10 @@
             <td class="text-center">{{fichero.fid}}</td>
             <td class="text-center">{{fichero.vecesLeido}}</td>
             <td>
-              <button (click)="entrenar(fichero.fid)"*ngIf="!hayEntrenamiento(fichero)"class="btn btn-outline-secondary mr-2">Entrenar</button>
-              <button routerLink="/entrenamientos/listar" *ngIf="hayEntrenamiento(fichero)"class="btn btn-outline-secondary mr-2">Ver Entrenamiento</button>
+              <button (click)="entrenar(fichero)"  *ngIf="!entrenando(fichero) && !entrenado(fichero)" class="btn btn-outline-secondary mr-2">Entrenar</button>
+              <button (click)="comprobar(fichero)" *ngIf="entrenando(fichero) && !entrenado(fichero)" class="btn btn-outline-secondary mr-2">Comprobar</button>
+              <button routerLink="/entrenamientos/listar"  *ngIf="entrenado(fichero)" class="btn btn-outline-secondary mr-2">Ver Entrenamiento</button>
+
 
               <button (click)="verContenidoFichero(fichero)" class="btn btn-outline-primary mr-2">Ver Contenido</button>
               <button (click)="eliminarFichero(fichero)" class="btn btn-outline-danger">Eliminar</button>

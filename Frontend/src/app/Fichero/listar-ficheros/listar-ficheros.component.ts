@@ -5,6 +5,7 @@ import { AuthenticationService } from 'app/Auth/authentication.service';
 import { Usuario } from 'app/Entities/Usuario';
 import { FicheroService } from '../fichero.service';
 import { EntrenamientoService } from 'app/Entrenamiento/entrenamiento.service';
+import { GetFicheroComponent } from '../get-fichero/get-fichero.component';
 
 @Component({
   selector: 'app-listar-ficheros',
@@ -114,12 +115,20 @@ export class ListarFicherosComponent implements OnInit {
     })
   }
 
-  entrenar(fid: string) {
+  entrenar(fichero: Fichero) {
 
-    this.entrenamientoService.entrenar(fid)
+
+    this.entrenamientoService.entrenar(fichero.fid)
     .subscribe(data => {
 
-      alert("Fichero entrenado correctamente")
+      this.usuario = this.authService.currentUserValue;
+      this.usuario.peticionesSoporteFront++;
+      this.usuario.peticionesWord2VecTrain++;
+      this.usuario.entrenamientosHechos++;
+
+      this.authService.updateUser(this.usuario);
+      //alert("Fichero entrenado correctamente")
+
       location.reload();
 
     }, error => {
@@ -128,12 +137,37 @@ export class ListarFicherosComponent implements OnInit {
 
   }
 
-  hayEntrenamiento(fichero: Fichero) {
 
-    return fichero.tid != ""
-
-
+  entrenado(fichero: Fichero) {
+    return fichero.hayEntrenamiento != 'false';
   }
 
+  entrenando(fichero: Fichero) {
+    return fichero.tid != "";
+  }
+
+  comprobar(fichero: Fichero) {
+
+
+    this.ficheroService.get(fichero.fid).subscribe(data => {
+
+      let cambiado = false;
+      let i = 0;
+      while (i < this.ficheros.length && !cambiado) {
+        if (this.ficheros[i].fid == fichero.fid) {
+          this.ficheros[i] = data;
+          alert("El entrenamiento se ha realizado correctamente");
+          cambiado = true;
+
+        }
+      }
+
+
+      this.usuario = this.authService.currentUserValue;
+      this.usuario.peticionesSoporteFront++;
+
+      this.authService.updateUser(this.usuario);
+    })
+  }
 
 }

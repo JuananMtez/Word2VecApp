@@ -29,6 +29,10 @@ export class FicheroService {
   }
 
   get(fid: string) {
+    return this.http.get<Fichero>(this.url + "/" + this.authService.currentUserValue.id + "/file/" + fid);
+  }
+
+  getText(fid: string) {
     const httpOptionsPlain = {
       headers: new HttpHeaders({
         'Accept': 'text/plain',
@@ -36,7 +40,7 @@ export class FicheroService {
       }),
       'responseType': 'text'
     };
-    return this.http.get<string>(this.url + "/" + this.authService.currentUserValue.id + "/file/" + fid, {responseType: 'text' as 'json'});
+    return this.http.get<string>(this.url + "/" + this.authService.currentUserValue.id + "/file/" + fid + "/text", {responseType: 'text' as 'json'});
 
   }
 

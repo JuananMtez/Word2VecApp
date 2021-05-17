@@ -18,7 +18,7 @@ export class GetFicheroComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.ficheroService.get(this.ficheroService.getFid()).subscribe(data => {
+    this.ficheroService.getText(this.ficheroService.getFid()).subscribe(data => {
       this.text = data
 
       this.usuario = this.authService.currentUserValue;
