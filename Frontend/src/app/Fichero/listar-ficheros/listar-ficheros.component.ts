@@ -129,12 +129,9 @@ export class ListarFicherosComponent implements OnInit {
       this.authService.updateUser(this.usuario);
       //alert("Fichero entrenado correctamente")
 
-      location.reload();
-
     }, error => {
 
     })
-
   }
 
 
@@ -161,6 +158,7 @@ export class ListarFicherosComponent implements OnInit {
           cambiado = true;
 
         }
+      i++;
       }
 
 
