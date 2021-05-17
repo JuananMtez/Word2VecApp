@@ -10,20 +10,13 @@ public class FicheroDTO implements Serializable {
 	private String usuarioId;
 	private String fileName;
 	private String vecesLeido;
-	private String hayEntrenamiento;
 	private String TID;
+	private String entrenamientoWID;
 
 	public String getFID() {
 		return FID;
 	}
 
-	public String getHayEntrenamiento() {
-		return hayEntrenamiento;
-	}
-
-	public void setHayEntrenamiento(String hayEntrenamiento) {
-		this.hayEntrenamiento = hayEntrenamiento;
-	}
 
 	public void setFID(String fID) {
 		FID = fID;
@@ -64,6 +57,16 @@ public class FicheroDTO implements Serializable {
 	public void setTID(String tID) {
 		TID = tID;
 	}
+
+	public String getEntrenamientoWID() {
+		return entrenamientoWID;
+	}
+
+	public void setEntrenamientoWID(String entrenamientoWID) {
+		this.entrenamientoWID = entrenamientoWID;
+	}
+	
+	
 
 
 
