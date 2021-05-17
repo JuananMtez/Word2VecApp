@@ -139,7 +139,7 @@ export class ListarFicherosComponent implements OnInit {
 
 
   entrenado(fichero: Fichero) {
-    return fichero.hayEntrenamiento != 'false';
+    return fichero.entrenamientoWID != null;
   }
 
   entrenando(fichero: Fichero) {
