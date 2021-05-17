@@ -16,6 +16,8 @@ public class Fichero {
 	
 	private String TID;
 	private Entrenamiento entrenamiento;
+	private boolean hayEntrenamiento;
+
 	
 	private int vecesLeido;
 	
@@ -28,6 +30,8 @@ public class Fichero {
 		this.vecesLeido = 0;
 		entrenamiento = null;
 		TID = "";
+		hayEntrenamiento = false;
+		
 	}
 	
 	public Fichero() {}
@@ -69,6 +73,16 @@ public class Fichero {
 
 	public String getFileName() {
 		return fileName;
+	}
+	
+	
+
+	public boolean isHayEntrenamiento() {
+		return hayEntrenamiento;
+	}
+
+	public void setHayEntrenamiento(boolean hayEntrenamiento) {
+		this.hayEntrenamiento = hayEntrenamiento;
 	}
 
 	public void setFileName(String fileName) {

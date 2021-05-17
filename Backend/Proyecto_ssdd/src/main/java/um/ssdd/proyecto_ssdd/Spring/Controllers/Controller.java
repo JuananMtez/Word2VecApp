@@ -209,6 +209,9 @@ public class Controller {
 		
 	}
 	
+	
+	
+	
 	@GetMapping("/{id}/files")
 	public ResponseEntity<List<FicheroDTO>> getAllFicherosUsuario(@PathVariable("id") String id) {
 			
@@ -216,8 +219,16 @@ public class Controller {
 		
 	}
 	
-	
 	@GetMapping("/{id}/file/{fid}")
+	public ResponseEntity<FicheroDTO> getFichero(@PathVariable("id") String id, @PathVariable("fid") String fid) {
+		FicheroDTO fichero = ficheroService.get(id, fid);
+		if ( fichero != null)
+			return ResponseEntity.ok(fichero);
+		return ResponseEntity.notFound().build();
+	}
+	
+	
+	@GetMapping("/{id}/file/{fid}/text")
 	public ResponseEntity<String> getFicheroText(@PathVariable("id") String id, @PathVariable("fid") String fid) {
 		String text = ficheroService.getText(id, fid);
 		if ( text != null)

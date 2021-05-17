@@ -64,12 +64,16 @@ public class FicheroService {
 	}
 	
 
-	public FicheroDTO get(String id) {
+	public FicheroDTO get(String id, String fid) {
 		
 		
-		Fichero f = ficheroRepository.findById(id).orElse(null);
+		Fichero f = ficheroRepository.findByUserIdAndFid(id, fid);
 
 		if (f != null) {
+			
+			Usuario u = usuarioRepository.findById(id).orElse(null);
+			u.addPeticionSoporteFront();
+			usuarioRepository.save(u);			
 			return entityToResponse(f);
 		}
 		return null;

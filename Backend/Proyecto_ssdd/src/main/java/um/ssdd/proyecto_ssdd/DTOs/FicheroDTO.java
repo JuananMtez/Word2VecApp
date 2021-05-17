@@ -10,11 +10,19 @@ public class FicheroDTO implements Serializable {
 	private String usuarioId;
 	private String fileName;
 	private String vecesLeido;
-	
+	private String hayEntrenamiento;
 	private String TID;
 
 	public String getFID() {
 		return FID;
+	}
+
+	public String getHayEntrenamiento() {
+		return hayEntrenamiento;
+	}
+
+	public void setHayEntrenamiento(String hayEntrenamiento) {
+		this.hayEntrenamiento = hayEntrenamiento;
 	}
 
 	public void setFID(String fID) {
