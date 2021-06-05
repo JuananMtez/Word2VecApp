@@ -15,36 +15,30 @@ import um.ssdd.proyecto_ssdd.Word2VecUse.DAO.Word2VecUseDAO;
 
 public class Word2VecUseService {
 
-		
 	public PalabrasDTO obtenerPalabras(String id, String wid, String word) {
-		
-		
-		Word2VecUseDAO word2VecUseDAO = new Word2VecUseDAO();
-		
-		Binary binary = word2VecUseDAO.findEntrenamiento(id, wid);
-				
-        File tempFile;
 
-	
-		
-		
-	    try {
-	    	
-	    	tempFile = File.createTempFile("pathToWriteto", ".bin");
-    		tempFile.deleteOnExit();
-    	
-    	 
-			Files.write(binary.getData(), tempFile);			
+		Word2VecUseDAO word2VecUseDAO = new Word2VecUseDAO();
+
+		Binary binary = word2VecUseDAO.findEntrenamiento(id, wid);
+
+		File tempFile;
+
+		try {
+
+			tempFile = File.createTempFile("pathToWriteto", ".bin");
+			tempFile.deleteOnExit();
+
+			Files.write(binary.getData(), tempFile);
 			Word2Vec vec = WordVectorSerializer.readWord2VecModel(tempFile);
 
-	    	Collection<String> lst = vec.wordsNearestSum(word, 10);
-	    	
-	        return new PalabrasDTO(lst.toString()); 
-	
-	    } catch (NullPointerException | IOException e) {}
-		
-		
+			Collection<String> lst = vec.wordsNearestSum(word, 10);
+
+			return new PalabrasDTO(lst.toString());
+
+		} catch (NullPointerException | IOException e) {
+		}
+
 		return new PalabrasDTO("");
 	}
-	
+
 }

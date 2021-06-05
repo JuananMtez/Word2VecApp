@@ -9,8 +9,7 @@ import um.ssdd.proyecto_ssdd.Entities.Entrenamiento;
 
 public interface IEntrenamientoRepository extends MongoRepository<Entrenamiento, String> {
 
-	
 	@Query("{'WID' : ?0}")
 	public List<Entrenamiento> findEntrenamientoById(String WID);
-	
+
 }

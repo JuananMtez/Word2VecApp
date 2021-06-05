@@ -17,7 +17,6 @@ public class FicheroDTO implements Serializable {
 		return FID;
 	}
 
-
 	public void setFID(String fID) {
 		FID = fID;
 	}
@@ -65,13 +64,5 @@ public class FicheroDTO implements Serializable {
 	public void setEntrenamientoWID(String entrenamientoWID) {
 		this.entrenamientoWID = entrenamientoWID;
 	}
-	
-	
 
-
-
-
-
-
-	
 }

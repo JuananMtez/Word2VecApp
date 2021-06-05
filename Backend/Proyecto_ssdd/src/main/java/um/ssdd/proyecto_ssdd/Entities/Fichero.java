@@ -1,38 +1,36 @@
 package um.ssdd.proyecto_ssdd.Entities;
 
-
 import org.bson.types.Binary;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection = "ficheros")
 public class Fichero {
-	
+
 	@Id
 	private String FID;
 	private String fileName;
-	
+
 	private String usuarioIdPropietario;
-	
+
 	private String TID;
 	private Entrenamiento entrenamiento;
 
-	
 	private int vecesLeido;
-	
+
 	private Binary fichero;
-	
-	
+
 	public Fichero(String usuarioIdPropietario, String fileName) {
 		this.usuarioIdPropietario = usuarioIdPropietario;
 		this.fileName = fileName;
 		this.vecesLeido = 0;
 		entrenamiento = null;
 		TID = "";
-		
+
 	}
-	
-	public Fichero() {}
+
+	public Fichero() {
+	}
 
 	public String getFID() {
 		return FID;
@@ -50,7 +48,6 @@ public class Fichero {
 		this.fichero = fichero;
 	}
 
-
 	public String getUsuarioIdPropietario() {
 		return usuarioIdPropietario;
 	}
@@ -58,8 +55,6 @@ public class Fichero {
 	public void setUsuarioIdPropietario(String usuarioIdPropietario) {
 		this.usuarioIdPropietario = usuarioIdPropietario;
 	}
-	
-	
 
 	public String getTID() {
 		return TID;
@@ -72,9 +67,6 @@ public class Fichero {
 	public String getFileName() {
 		return fileName;
 	}
-	
-	
-
 
 	public void setFileName(String fileName) {
 		this.fileName = fileName;
@@ -87,7 +79,7 @@ public class Fichero {
 	public void setVecesLeido(int vecesLeido) {
 		this.vecesLeido = vecesLeido;
 	}
-	
+
 	public void sumarLectura() {
 		this.vecesLeido++;
 	}
@@ -98,5 +90,5 @@ public class Fichero {
 
 	public void setEntrenamiento(Entrenamiento entrenamiento) {
 		this.entrenamiento = entrenamiento;
-	}	
+	}
 }

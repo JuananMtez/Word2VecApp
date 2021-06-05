@@ -11,19 +11,19 @@ public class UsuarioResponse implements Serializable {
 	private String nombre;
 	private String apellidos;
 	private List<FicheroDTO> ficheros;
-	
+
 	private String correoElectronico;
-	
+
 	private int ficherosAlmacenadosActualmente;
 	private int ficherosSubidosTotalmente;
 	private int vecesConectado;
-	
+
 	private int peticionesSoporteFront;
 	private int peticionesWord2VecTrain;
 	private int peticionesWord2VecUse;
-	
+
 	private int vecesContrasenaModificada;
-	private int palabrasConsultadas; 
+	private int palabrasConsultadas;
 	private int entrenamientosHechos;
 
 	public static long getSerialversionuid() {
@@ -33,7 +33,6 @@ public class UsuarioResponse implements Serializable {
 	public String getId() {
 		return id;
 	}
-	
 
 	public String getCorreoElectronico() {
 		return correoElectronico;
@@ -95,7 +94,6 @@ public class UsuarioResponse implements Serializable {
 		this.apellidos = apellidos;
 	}
 
-	
 	public int getFicherosAlmacenadosActualmente() {
 		return ficherosAlmacenadosActualmente;
 	}
@@ -119,8 +117,6 @@ public class UsuarioResponse implements Serializable {
 	public void setFicherosSubidosTotalmente(int ficherosSubidosTotalmente) {
 		this.ficherosSubidosTotalmente = ficherosSubidosTotalmente;
 	}
-
-
 
 	public int getPeticionesSoporteFront() {
 		return peticionesSoporteFront;
@@ -153,6 +149,5 @@ public class UsuarioResponse implements Serializable {
 	public void setVecesConectado(int vecesConectado) {
 		this.vecesConectado = vecesConectado;
 	}
-	
 
 }

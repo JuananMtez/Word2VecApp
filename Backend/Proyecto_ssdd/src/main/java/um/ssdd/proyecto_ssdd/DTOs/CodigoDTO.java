@@ -1,7 +1,7 @@
 package um.ssdd.proyecto_ssdd.DTOs;
 
 public class CodigoDTO {
-	
+
 	private String codigoConfirmacion;
 	private String correoElectronico;
 
@@ -20,8 +20,5 @@ public class CodigoDTO {
 	public void setCorreoElectronico(String correoElectronico) {
 		this.correoElectronico = correoElectronico;
 	}
-	
-	
-	
 
 }

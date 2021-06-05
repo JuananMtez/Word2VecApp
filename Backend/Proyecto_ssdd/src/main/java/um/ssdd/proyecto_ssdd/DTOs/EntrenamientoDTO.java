@@ -4,12 +4,12 @@ public class EntrenamientoDTO {
 
 	private String WID;
 	private String nombreFichero;
-	
+
 	public EntrenamientoDTO() {
-		
+
 	}
-	
-	public EntrenamientoDTO( String wID, String nombreFichero ) {
+
+	public EntrenamientoDTO(String wID, String nombreFichero) {
 		this.WID = wID;
 		this.nombreFichero = nombreFichero;
 	}
@@ -29,11 +29,5 @@ public class EntrenamientoDTO {
 	public void setNombreFichero(String nombreFichero) {
 		this.nombreFichero = nombreFichero;
 	}
-	
-	
 
-
-	
-	
-	
 }

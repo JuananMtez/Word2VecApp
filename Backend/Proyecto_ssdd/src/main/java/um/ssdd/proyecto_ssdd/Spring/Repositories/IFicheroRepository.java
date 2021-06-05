@@ -11,15 +11,14 @@ public interface IFicheroRepository extends MongoRepository<Fichero, String> {
 
 	@Query("{'usuarioIdPropietario' : ?0}")
 	public List<Fichero> findByUserId(String usuarioId);
-	
+
 	@Query("{'usuarioIdPropietario' : ?0, 'FID': ?1}")
 	public Fichero findByUserIdAndFid(String usuarioId, String FID);
-	
+
 	@Query("{'usuarioIdPropietario' : ?0, 'fileName': ?1}")
 	public Fichero findByUserIdAndFileName(String usuarioId, String fileName);
 
 	@Query("{'TID' : ?0}")
 	public Fichero findByTid(String TID);
 
-	
 }

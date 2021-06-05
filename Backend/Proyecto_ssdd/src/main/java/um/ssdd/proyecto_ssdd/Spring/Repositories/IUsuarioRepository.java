@@ -10,16 +10,14 @@ import um.ssdd.proyecto_ssdd.Entities.Usuario;
 @Repository
 @Transactional
 public interface IUsuarioRepository extends MongoRepository<Usuario, String> {
-	
+
 	@Query("{'user' : ?0 , 'password' : ?1}")
 	public Usuario findByUserPassword(String user, String password);
-	
 
 	@Query("{'correoElectronico' : ?0}")
 	public Usuario findByEmail(String correoElectronico);
-	
+
 	@Query(exists = true)
 	public Boolean existsByUser(String user);
-	
-	
+
 }

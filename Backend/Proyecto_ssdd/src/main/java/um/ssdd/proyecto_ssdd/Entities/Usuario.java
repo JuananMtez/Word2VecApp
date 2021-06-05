@@ -11,51 +11,42 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection = "usuarios")
 public class Usuario {
 
-
-
 	@Id
 	private String id;
-	
+
 	private String user;
-	
+
 	private String password;
-	
+
 	private String nombre;
-	
+
 	private String apellidos;
-	
+
 	private String token;
-	
+
 	private String correoElectronico;
-	
+
 	private List<Fichero> ficheros;
-	
-	
-	
-	
-	
+
 	private int ficherosSubidosTotalmente;
 	private int ficherosAlmacenadosActualmente;
 
-	
 	private int peticionesSoporteFront;
 	private int peticionesWord2VecTrain;
 	private int peticionesWord2VecUse;
-	
-	
+
 	private int vecesConectado;
-	
+
 	private int vecesContrasenaModificada;
-	
-	private int palabrasConsultadas; 
+
+	private int palabrasConsultadas;
 	private int entrenamientosHechos;
-	
+
 	private String codigoConfirmación;
 	private boolean confirmado;
-	
-	
 
-	public Usuario(String user, String password, String nombre, String apellidos, String token, String correoElectronico) {
+	public Usuario(String user, String password, String nombre, String apellidos, String token,
+			String correoElectronico) {
 		this.user = user;
 		this.password = password;
 		this.nombre = nombre;
@@ -70,22 +61,21 @@ public class Usuario {
 		peticionesSoporteFront = 0;
 		peticionesWord2VecTrain = 0;
 		peticionesWord2VecUse = 0;
-		
+
 		vecesContrasenaModificada = 0;
 		palabrasConsultadas = 0;
 		entrenamientosHechos = 0;
-		
+
 		codigoConfirmación = null;
-		
+
 		this.correoElectronico = correoElectronico;
-		
+
 		confirmado = false;
-		
-		
-		
+
 	}
-	
-	public Usuario() {}
+
+	public Usuario() {
+	}
 
 	public String getId() {
 		return id;
@@ -127,7 +117,6 @@ public class Usuario {
 		this.nombre = nombre;
 	}
 
-	
 	public int getVecesContrasenaModificada() {
 		return vecesContrasenaModificada;
 	}
@@ -160,8 +149,6 @@ public class Usuario {
 		this.apellidos = apellidos;
 	}
 
-
-
 	public List<Fichero> getFicheros() {
 		return ficheros;
 	}
@@ -177,8 +164,6 @@ public class Usuario {
 	public void setToken(String token) {
 		this.token = token;
 	}
-	
-	
 
 	public int getPeticionesSoporteFront() {
 		return peticionesSoporteFront;
@@ -212,8 +197,6 @@ public class Usuario {
 		this.ficherosSubidosTotalmente = ficherosSubidosTotalmente;
 	}
 
-
-
 	public int getVecesConectado() {
 		return vecesConectado;
 	}
@@ -225,25 +208,25 @@ public class Usuario {
 	public void addFichero(Fichero fichero) {
 		ficheros.add(fichero);
 	}
-	
+
 	public void initializeLists() {
 		ficheros = new ArrayList<Fichero>();
 	}
-	
+
 	public void deleteFichero(String fid) {
-		
+
 		Iterator<Fichero> iterator = ficheros.iterator();
 		boolean removed = false;
 		while (!removed && iterator.hasNext()) {
 			Fichero fichero = iterator.next();
-			
+
 			if (fichero.getFID().equals(fid)) {
 				iterator.remove();
 				removed = true;
 			}
 		}
 	}
-	
+
 	public String getCorreoElectronico() {
 		return correoElectronico;
 	}
@@ -255,24 +238,23 @@ public class Usuario {
 	public void addConexión() {
 		this.vecesConectado++;
 	}
-	
+
 	public void addPeticionSoporteFront() {
 		this.peticionesSoporteFront++;
 	}
-	
-	
+
 	public void addTotalFicherosSubidos() {
 		this.ficherosSubidosTotalmente++;
 	}
-	
+
 	public void addFicherosActuales() {
 		this.ficherosAlmacenadosActualmente++;
 	}
-	
+
 	public void removeFicherosActuales() {
 		this.ficherosAlmacenadosActualmente--;
 	}
-	
+
 	public void addVecesContrasenaModificada() {
 		this.vecesContrasenaModificada++;
 	}
@@ -292,34 +274,34 @@ public class Usuario {
 	public void setConfirmado(boolean confirmado) {
 		this.confirmado = confirmado;
 	}
-	
+
 	public List<Entrenamiento> getAllEntrenamientos() {
-		
+
 		return ficheros.stream().map(f -> f.getEntrenamiento()).collect(Collectors.toList());
 	}
-	
+
 	public void modificarFichero(Fichero fichero) {
-		
+
 		Iterator<Fichero> iterator = ficheros.iterator();
 		boolean removed = false;
 		while (!removed && iterator.hasNext()) {
 			Fichero f = iterator.next();
-			
+
 			if (fichero.getFID().equals(f.getFID())) {
 				iterator.remove();
 				removed = true;
 			}
 		}
-		
+
 		ficheros.add(fichero);
 	}
-	
+
 	public void addPeticionesTrain() {
 		peticionesWord2VecTrain++;
 	}
-	
-	
-	
-	
+
+	public void addEntrenamientosHechos() {
+		entrenamientosHechos++;
+	}
 
 }

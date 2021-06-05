@@ -2,9 +2,7 @@ package um.ssdd.proyecto_ssdd.DTOs;
 
 import java.io.Serializable;
 
-
 public class UsuarioPost implements Serializable {
-
 
 	private static final long serialVersionUID = 1L;
 	private String user;
@@ -12,10 +10,6 @@ public class UsuarioPost implements Serializable {
 	private String nombre;
 	private String apellidos;
 	private String correoElectronico;
-
-	
-	
-	
 
 	public String getUser() {
 		return user;
@@ -49,8 +43,6 @@ public class UsuarioPost implements Serializable {
 		this.apellidos = apellidos;
 	}
 
-
-	
 	public String getCorreoElectronico() {
 		return correoElectronico;
 	}
