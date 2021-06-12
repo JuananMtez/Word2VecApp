@@ -1,7 +1,9 @@
 package um.ssdd.proyecto_ssdd.TestClient;
 
+import java.io.File;
 import java.io.IOException;
 import java.net.URI;
+import java.net.URL;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpRequest.BodyPublishers;
@@ -10,19 +12,30 @@ import java.net.http.HttpResponse.BodyHandler;
 import java.net.http.HttpResponse.BodyHandlers;
 import java.util.Scanner;
 
+import org.apache.http.Header;
+import org.apache.http.HttpEntity;
+import org.apache.http.client.methods.CloseableHttpResponse;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.entity.ContentType;
+import org.apache.http.entity.mime.HttpMultipartMode;
+import org.apache.http.entity.mime.MultipartEntityBuilder;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClients;
+
 import com.google.gson.Gson;
 import com.mashape.unirest.http.Unirest;
 
+import um.ssdd.proyecto_ssdd.DTOs.FicheroDTO;
+import um.ssdd.proyecto_ssdd.DTOs.UsuarioLogin;
 import um.ssdd.proyecto_ssdd.DTOs.UsuarioPost;
 import um.ssdd.proyecto_ssdd.DTOs.UsuarioResponse;
 
 public class TestClient {
 
-	public static void registroEliminacion() {
+	public static boolean registroEliminacion() {
 
 		System.out.print("Comprobando registro de usuario .... ");
 
-		boolean ok = false;
 		String email = "prueba@prueba.com";
 		String id = null;
 
@@ -49,97 +62,340 @@ public class TestClient {
 
 			if (response.statusCode() == 200) {
 				System.out.println("OK.");
-				ok = true;
 			} else {
 				System.out.println("ERROR.");
-				ok = false;
+				return false;
 			}
+
+		} catch (IOException | InterruptedException e) {
+			e.printStackTrace();
+			System.out.println("ERROR.");
+			return false;
+		}
+		
+		
+		System.out.print("Comprobando obtención del usuario de la base de datos .... ");
+		
+		request = HttpRequest.newBuilder()
+				.uri(URI.create("http://localhost:8080/api/usuarios/email/" + email))
+				.build();
+		
+		
+		
+		try {
+			HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
+			UsuarioResponse user = gson.fromJson(response.body(), UsuarioResponse.class);
+			
+			if (user != null) {
+				id = user.getId();
+				System.out.println(" OK.");
+			} else {
+				System.out.println(" ERROR.");
+				return false;
+			}
+			
+			
+			
+			
+		} catch (IOException | InterruptedException e) {
+			e.printStackTrace();
+			System.out.println("ERROR.");
+			return false;
+		}
+	
+	
+
+		
+		System.out.print("Comprobando eliminación del usuario .... ");
+		
+		request = HttpRequest.newBuilder()
+				.uri(URI.create("http://localhost:8080/api/usuarios/" + id))
+				.DELETE()
+				.build();
+		
+		try {
+			HttpResponse<?> response = client.send(request, BodyHandlers.discarding());
+			
+			if (response.statusCode() == 204) {
+				System.out.println(" OK.");
+			} else {
+				System.out.println(" ERROR.");
+				return false;
+			}
+			
+		} catch (IOException | InterruptedException e) {
+			e.printStackTrace();
+			System.out.println("ERROR.");
+			return false;
+		}
+		
+		return true;
+	}
+
+	public static boolean login() {
+		
+		System.out.print("Comprobando login de usuario .... ");
+
+		
+		UsuarioLogin usuario = new UsuarioLogin();
+		usuario.setUser("PruebaLogin");
+		usuario.setPassword("1234");
+		
+		Gson gson = new Gson();
+		String mensaje = gson.toJson(usuario);
+
+		HttpClient client = HttpClient.newBuilder().build();
+
+		HttpRequest request = HttpRequest.newBuilder()
+				.uri(URI.create("http://localhost:8080/api/usuarios/login"))
+				.header("Content-Type", "application/json")
+				.POST(BodyPublishers.ofString(mensaje))
+				.build();
+		try {
+			HttpResponse<?> response = client.send(request, BodyHandlers.discarding());
+
+			if (response.statusCode() == 200) {
+				System.out.println("OK.");
+			} else {
+				System.out.println("ERROR.");
+				return false;
+			}
+
+		} catch (IOException | InterruptedException e) {
+			e.printStackTrace();
+			System.out.println("ERROR.");
+			return false;
+		}
+		
+		
+		return true;
+
+		
+		
+	}
+
+	public static boolean funcionalidadesFichero() {
+		
+		
+
+		String email = "juanantonio.martinezl@um.es";
+		
+		UsuarioResponse user = null;
+		FicheroDTO fichero = null;
+		String FID = null;
+		String TID = null;
+		String WID = null;
+		
+		
+		System.out.print("Comprobando obtención del usuario de la base de datos .... ");
+		
+		HttpClient client = HttpClient.newBuilder().build();
+
+		
+		HttpRequest request = HttpRequest.newBuilder()
+				.uri(URI.create("http://localhost:8080/api/usuarios/email/" + email))
+				.build();
+		
+		
+		
+		try {
+			
+			
+			HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
+			
+			Gson gson = new Gson();
+			user = gson.fromJson(response.body(), UsuarioResponse.class);
+			
+			if (user != null) {
+				System.out.println(" OK.");
+			} else {
+				System.out.println(" ERROR.");
+				return false;
+			}
+
+		} catch (IOException | InterruptedException e) {
+			e.printStackTrace();
+			System.out.println("ERROR.");
+			return false;
+		}
+		
+			
+		System.out.print("Subiendo fichero .... ");
+
+		CloseableHttpClient cliente = HttpClients.createDefault();
+		HttpPost httpPost = new HttpPost("http://localhost:8080/api/usuarios/" + user.getId() + "/file");
+		
+		
+		
+		MultipartEntityBuilder builder = MultipartEntityBuilder.create();
+		builder.addBinaryBody(
+		  "file", new File("raw_sentences.txt"), ContentType.APPLICATION_OCTET_STREAM, "raw_sentences.txt");
+		
+		HttpEntity multipart = builder.build();
+		httpPost.setEntity(multipart);
+		
+		try {
+			CloseableHttpResponse response = cliente.execute(httpPost);
+		    cliente.close();
+		    
+		    FID = response.getHeaders("Location")[0].getValue();
+		   
+		
+		    if (FID != null) {
+				System.out.println(" OK.");
+
+		    } else {
+				System.out.println(" ERROR.");
+				return false;
+		    }
+		    
+		    
+		} catch (IOException e) {
+			e.printStackTrace();
+			System.out.println(" ERROR.");
+			return false;
+		}
+		
+		
+		
+		System.out.print("Realizando entrenamiento .... ");
+
+		
+		cliente = HttpClients.createDefault();
+		httpPost = new HttpPost("http://localhost:8080/api/usuarios/" + user.getId() + "/train/" + FID);
+		
+	
+		
+		try {
+			CloseableHttpResponse response = cliente.execute(httpPost);
+		    cliente.close();
+		    
+		    TID = response.getHeaders("Location")[0].getValue();
+		   
+		    
+		    boolean terminado = false;
+		    int intentos = 3;
+		    
+		    while (!terminado && intentos > 0) {
+		    	
+			    request = HttpRequest.newBuilder()
+						.uri(URI.create("http://localhost:8080/api/usuarios/" + user.getId() + "/file/" + FID))
+						.build();
+			    
+			    HttpResponse<String> respuesta = client.send(request, BodyHandlers.ofString());
+				
+				Gson gson = new Gson();
+				fichero = gson.fromJson(respuesta.body(), FicheroDTO.class);
+				
+				
+				
+				if (fichero.getEntrenamientoWID() != null) {
+					terminado = true;
+
+				} else {
+					Thread.sleep(4000);
+					intentos--;
+					
+				}
+			    
+		    }
+		    
+		    
+		    if (terminado) {
+				System.out.println(" OK.");
+
+		    } else {
+		    	
+				System.out.println(" ERROR.");
+				eliminarFichero(user.getId(), FID);
+		    	return false;
+		    }
+		    
+ 
+		    
+		} catch (IOException | InterruptedException e) {
+			e.printStackTrace();
+			System.out.println(" ERROR.");
+			return false;
+		}
+		
+		System.out.print("Ejecutando entrenamiento .... ");
+
+	    
+		client = HttpClient.newBuilder().build();
+
+		
+		request = HttpRequest.newBuilder()
+				.uri(URI.create("http://localhost:8081/Proyecto_ssdd/rest/w2buse/" + user.getId() + "/" + fichero.getEntrenamientoWID() + "?word=day"))
+				.build();
+		
+		 try {
+			HttpResponse<String> respuesta = client.send(request, BodyHandlers.ofString());
+			
+			if (respuesta.statusCode() == 200) {
+				System.out.println(" OK.");
+			} else {
+				System.out.println(" ERROR.");
+				return false;
+				
+			}
+			
+			
+		} catch (IOException | InterruptedException e) {
+			e.printStackTrace();
+			System.out.println(" ERROR.");
+			return false;
+		}
+		
+	    
+		System.out.print("Eliminar fichero .... ");
+		 
+		 
+		if(eliminarFichero(user.getId(), FID)) {
+			System.out.println(" OK.");
+		} else {
+			System.out.println(" ERROR.");
+			return false;
+		}
+		
+		return true;
+		
+		
+
+	}
+
+
+	
+	private static boolean eliminarFichero(String id, String FID) {
+		
+		HttpClient client = HttpClient.newBuilder().build();
+
+		
+		HttpRequest request = HttpRequest.newBuilder()
+				.uri(URI.create("http://localhost:8080/api/usuarios/" + id + "/file/" + FID))
+				.DELETE()
+				.build();
+		
+		
+		
+		try {
+			
+			
+			HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
+			
+			if (response.statusCode() == 204) {
+				return true;
+			}
+			return false;
+
 
 		} catch (IOException | InterruptedException e) {
 			e.printStackTrace();
 		}
 		
-		if (ok) {
 		
-			System.out.print("Comprobando obtención del usuario de la base de datos .... ");
-			
-			request = HttpRequest.newBuilder()
-					.uri(URI.create("http://localhost:8080/api/usuarios/email/" + email))
-					.build();
-			
-			
-			
-			try {
-				HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
-				UsuarioResponse user = gson.fromJson(response.body(), UsuarioResponse.class);
-				
-				if (user != null) {
-					id = user.getId();
-					System.out.println(" OK.");
-					ok = true;
-				} else {
-					System.out.println(" ERROR.");
-					ok = false;
-				}
-				
-				
-				
-				
-			} catch (IOException | InterruptedException e) {
-				e.printStackTrace();
-			}
-		}
+		return false;
 		
-		if (ok) {
-			
-			System.out.print("Comprobando eliminación del usuario .... ");
-			
-			request = HttpRequest.newBuilder()
-					.uri(URI.create("http://localhost:8080/api/usuarios/" + id))
-					.DELETE()
-					.build();
-			
-			try {
-				HttpResponse<?> response = client.send(request, BodyHandlers.discarding());
-				
-				if (response.statusCode() == 204) {
-					System.out.println(" OK.");
-					ok = true;
-				} else {
-					System.out.println(" ERROR.");
-					ok = false;
-				}
-				
-			} catch (IOException | InterruptedException e) {
-				e.printStackTrace();
-			}
-
-		}
-
-		
-		
-		
-		if (ok)
-			System.out.println("\nTest realizado sin errores\n");
-		else
-			System.out.println("\nTest finalizado con errores\n");
-
-	}
-
-	public static void login() {
-
-	}
-
-	public static void subirFichero() {
-
-	}
-
-	public static void entrenarFichero() {
-
-	}
-
-	public static void ejecutarEntrenamiento() {
-
 	}
 
 	public static void main(String[] args) {
@@ -148,14 +404,12 @@ public class TestClient {
 		System.out.println("Puedes probar las siguientes funcionalidades");
 		System.out.println("1. Registro, obtención y eliminación de usuario");
 		System.out.println("2. Login de usuario");
-		System.out.println("3. Subir fichero");
-		System.out.println("4. Entrenar fichero");
-		System.out.println("5. Ejecutar entrenamiento");
-		System.out.println("6. Comprobar todo");
-		System.out.println("7. Explicaciones");
-		System.out.println("8. Finalizar test de pruebas\n");
+		System.out.println("3. Subir fichero, entrenar fichero, ejecutar entrenamiento y eliminar fichero");
+		System.out.println("4. Explicaciones");
+		System.out.println("5. Finalizar test de pruebas\n");
 
 		boolean terminado = false;
+		Scanner sc = null;
 
 		while (!terminado) {
 
@@ -166,53 +420,54 @@ public class TestClient {
 			boolean seleccionado = false;
 			while (!seleccionado) {
 
-				Scanner sc = new Scanner(System.in);
+				sc = new Scanner(System.in);
 				String cadena = sc.nextLine();
 
 				if (!cadena.equals("")) {
 					numeroSeleccionado = Integer.valueOf(cadena);
 				}
 
-				if (numeroSeleccionado > 0 && numeroSeleccionado <= 8)
+				if (numeroSeleccionado > 0 && numeroSeleccionado <= 5)
 					seleccionado = true;
 				else
-					System.out.println("Por favor, seleccione un número válido ( 1..8 )");
+					System.out.println("Por favor, seleccione un número válido ( 1..5 )");
 
 			}
 			System.out.println();
 			switch (numeroSeleccionado) {
 			case 1:
-				registroEliminacion();
+				if(registroEliminacion())
+					System.out.println("\nTest realizado sin errores\n");
+				else
+					System.out.println("\nTest finalizado con errores\n");
+				
 				break;
-
 			case 2:
-				login();
+				if(login())
+					System.out.println("\nTest realizado sin errores\n");
+				else
+					System.out.println("\nTest finalizado con errores\n");
+					
 				break;
 			case 3:
-				subirFichero();
+				if(funcionalidadesFichero())
+					System.out.println("\nTest realizado sin errores\n");
+				else
+					System.out.println("\nTest finalizado con errores\n");				
 				break;
 
+				
 			case 4:
-				entrenarFichero();
+				
+				System.out.println("1. Registro, obtención y eliminación de usuario:");
+				System.out.println("\tSe registra el usuario, posteriormente se intentará recuperar de la base de datos para obtener su id y finalmente se borrará para que no haya problemas al realizar otra vez la prueba\n");
+
+				
 				break;
 
 			case 5:
-				ejecutarEntrenamiento();
-				break;
-
-			case 6:
-				break;
-				
-			case 7:
-				
-				System.out.println("1. Registro, obtención y eliminación de usuario:");
-				System.out.println("\tSe registra el usuario, posteriormente se intentará obtener de la base de datos y finalmente se borrará para que no haya problemas al realizar otra vez la prueba\n");
-
-				
-				break;
-
-			case 8:
 				terminado = true;
+				sc.close();
 				System.out.println("Cerrando cliente de pruebas");
 
 				break;
