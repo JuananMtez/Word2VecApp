@@ -73,9 +73,20 @@ export class ListarFicherosComponent implements OnInit {
 
       this.authService.updateUser(this.usuario);
 
+
+      let i = this.ficheros.indexOf( fichero );
+
+      console.log(i)
+      if ( i !== -1 ) {
+        this.ficheros.splice( i, 1 );
+      }
       alert("Fichero " + fichero.fileName + " eliminado correctamente");
 
-      location.reload();
+    },
+    error =>{
+
+      alert("Fichero " + fichero.fileName + " no se ha podido eliminar");
+
     });
   }
 
@@ -127,9 +138,11 @@ export class ListarFicherosComponent implements OnInit {
       this.usuario.entrenamientosHechos++;
 
       this.authService.updateUser(this.usuario);
-      //alert("Fichero entrenado correctamente")
 
       this.ficheroService.get(fichero.fid).subscribe(data => {
+
+        this.usuario.peticionesSoporteFront++;
+        this.authService.updateUser(this.usuario);
 
         let cambiado = false;
         let i = 0;
