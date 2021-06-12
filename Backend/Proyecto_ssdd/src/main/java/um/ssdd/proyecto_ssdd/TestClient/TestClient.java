@@ -360,12 +360,8 @@ public class TestClient {
 		
 		return true;
 		
-		
-
 	}
 
-
-	
 	private static boolean eliminarFichero(String id, String FID) {
 		
 		HttpClient client = HttpClient.newBuilder().build();
@@ -376,11 +372,8 @@ public class TestClient {
 				.DELETE()
 				.build();
 		
-		
-		
 		try {
-			
-			
+				
 			HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
 			
 			if (response.statusCode() == 204) {
@@ -456,7 +449,6 @@ public class TestClient {
 					System.out.println("\nTest finalizado con errores\n");				
 				break;
 
-				
 			case 4:
 				
 				System.out.println("1. Registro, obtención y eliminación de usuario:");
@@ -473,7 +465,6 @@ public class TestClient {
 				break;
 
 			}
-
 		}
 	}
 
