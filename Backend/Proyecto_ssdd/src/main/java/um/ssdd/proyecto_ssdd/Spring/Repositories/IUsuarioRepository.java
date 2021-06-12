@@ -16,6 +16,9 @@ public interface IUsuarioRepository extends MongoRepository<Usuario, String> {
 
 	@Query("{'correoElectronico' : ?0}")
 	public Usuario findByEmail(String correoElectronico);
+	
+	@Query("{'user' : ?0}")
+	public Usuario findByUser(String user);
 
 	@Query(exists = true)
 	public Boolean existsByUser(String user);
