@@ -399,14 +399,17 @@ public class TestClient {
 				sc = new Scanner(System.in);
 				String cadena = sc.nextLine();
 
-				if (!cadena.equals("")) {
-					numeroSeleccionado = Integer.valueOf(cadena);
-				}
+				try {
+					numeroSeleccionado = Integer.parseInt(cadena);
+				} catch (NumberFormatException e) {}
+				//if (!cadena.equals("")) {
+					//numeroSeleccionado = Integer.valueOf(cadena);
+				//}
 
 				if (numeroSeleccionado > 0 && numeroSeleccionado <= 5)
 					seleccionado = true;
 				else
-					System.out.println("Por favor, seleccione un número válido ( 1..5 )");
+					System.out.print("Por favor, seleccione un número válido ( 1..5 ) -> ");
 
 			}
 			System.out.println();
