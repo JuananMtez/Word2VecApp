@@ -2,6 +2,7 @@ package um.ssdd.proyecto_ssdd.TestClient;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.ConnectException;
 import java.net.URI;
 import java.net.URL;
 import java.net.http.HttpClient;
@@ -67,8 +68,7 @@ public class TestClient {
 				return false;
 			}
 
-		} catch (IOException | InterruptedException e) {
-			e.printStackTrace();
+		} catch (IOException | InterruptedException e ) {
 			System.out.println("ERROR.");
 			return false;
 		}
@@ -98,7 +98,6 @@ public class TestClient {
 			
 			
 		} catch (IOException | InterruptedException e) {
-			e.printStackTrace();
 			System.out.println("ERROR.");
 			return false;
 		}
@@ -124,7 +123,6 @@ public class TestClient {
 			}
 			
 		} catch (IOException | InterruptedException e) {
-			e.printStackTrace();
 			System.out.println("ERROR.");
 			return false;
 		}
@@ -162,16 +160,11 @@ public class TestClient {
 			}
 
 		} catch (IOException | InterruptedException e) {
-			e.printStackTrace();
 			System.out.println("ERROR.");
 			return false;
 		}
 		
-		
 		return true;
-
-		
-		
 	}
 
 	public static boolean funcionalidadesFichero() {
@@ -183,8 +176,6 @@ public class TestClient {
 		UsuarioResponse user = null;
 		FicheroDTO fichero = null;
 		String FID = null;
-		String TID = null;
-		String WID = null;
 		
 		
 		System.out.print("Comprobando obtención del usuario de la base de datos .... ");
@@ -195,11 +186,8 @@ public class TestClient {
 		HttpRequest request = HttpRequest.newBuilder()
 				.uri(URI.create("http://localhost:8080/api/usuarios/email/" + email))
 				.build();
-		
-		
-		
+				
 		try {
-			
 			
 			HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
 			
@@ -214,7 +202,6 @@ public class TestClient {
 			}
 
 		} catch (IOException | InterruptedException e) {
-			e.printStackTrace();
 			System.out.println("ERROR.");
 			return false;
 		}
@@ -251,7 +238,6 @@ public class TestClient {
 		    
 		    
 		} catch (IOException e) {
-			e.printStackTrace();
 			System.out.println(" ERROR.");
 			return false;
 		}
@@ -269,10 +255,7 @@ public class TestClient {
 		try {
 			CloseableHttpResponse response = cliente.execute(httpPost);
 		    cliente.close();
-		    
-		    TID = response.getHeaders("Location")[0].getValue();
-		   
-		    
+		    		   
 		    boolean terminado = false;
 		    int intentos = 3;
 		    
@@ -314,7 +297,6 @@ public class TestClient {
  
 		    
 		} catch (IOException | InterruptedException e) {
-			e.printStackTrace();
 			System.out.println(" ERROR.");
 			return false;
 		}
@@ -336,14 +318,15 @@ public class TestClient {
 				System.out.println(" OK.");
 			} else {
 				System.out.println(" ERROR.");
+				eliminarFichero(user.getId(), FID);
 				return false;
 				
 			}
 			
 			
 		} catch (IOException | InterruptedException e) {
-			e.printStackTrace();
 			System.out.println(" ERROR.");
+			eliminarFichero(user.getId(), FID);
 			return false;
 		}
 		
@@ -452,9 +435,13 @@ public class TestClient {
 			case 4:
 				
 				System.out.println("1. Registro, obtención y eliminación de usuario:");
-				System.out.println("\tSe registra el usuario, posteriormente se intentará recuperar de la base de datos para obtener su id y finalmente se borrará para que no haya problemas al realizar otra vez la prueba\n");
+				System.out.println("\tSe registra el usuario.\n\tPosteriormente se intentará recuperar de la base de datos para obtener su id.\n\tFinalmente se borrará para que no haya problemas al realizar otra vez la prueba.\n");
 
+				System.out.println("2. Login de usuario:");
+				System.out.println("\tSe intentará loguear con una cuenta que ha sido creada previamente para poder realizar la prueba.\n");
 				
+				System.out.println("3. Subir fichero, entrenar fichero, ejecutar entrenamiento y eliminar fichero:");
+				System.out.println("\tSe almacenará un fichero en la cuenta de un usuario previamente creado.\n\tSe entrenará.\n\tSe realizará un entrenamiento con una palabra aleatoria.\n\tFinalmente se borra el fichero para que se pueda realizar la prueba tantas veces como uno quiera.\n");
 				break;
 
 			case 5:
