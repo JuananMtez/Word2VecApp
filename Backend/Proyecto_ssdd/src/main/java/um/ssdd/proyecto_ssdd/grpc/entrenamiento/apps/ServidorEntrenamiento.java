@@ -1,27 +1,10 @@
 package um.ssdd.proyecto_ssdd.grpc.entrenamiento.apps;
 
 import java.io.IOException;
-import java.time.Duration;
-import java.util.Collections;
-import java.util.Properties;
-import java.util.concurrent.CountDownLatch;
-import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import org.apache.kafka.clients.consumer.ConsumerRecord;
-import org.apache.kafka.clients.consumer.ConsumerRecords;
-import org.apache.kafka.clients.consumer.KafkaConsumer;
-
-import io.grpc.ManagedChannel;
-import io.grpc.ManagedChannelBuilder;
 import io.grpc.Server;
 import io.grpc.ServerBuilder;
-import io.grpc.StatusRuntimeException;
-import io.grpc.stub.StreamObserver;
-import um.ssdd.proyecto_ssdd.grpc.entrenamiento.CrearEntrenamientoRequest;
-import um.ssdd.proyecto_ssdd.grpc.entrenamiento.CrearEntrenamientoResponse;
-import um.ssdd.proyecto_ssdd.grpc.entrenamiento.Entrenamiento;
-import um.ssdd.proyecto_ssdd.grpc.entrenamiento.EntrenamientoServiceGrpc;
 
 public class ServidorEntrenamiento 
 {
@@ -77,7 +60,10 @@ public class ServidorEntrenamiento
      */
     public static void main(String[] args) throws IOException, InterruptedException
     {
-        if (args.length < 1)
+    	final ServidorEntrenamiento server = new ServidorEntrenamiento();
+        server.start();
+        server.blockUntilShutdown();
+        /*if (args.length < 1)
         {
             System.out.println("Usage: consumer <topic>");
             return;
@@ -160,6 +146,6 @@ public class ServidorEntrenamiento
                 }
                     
             }
-        }
+        }*/
     }
 }

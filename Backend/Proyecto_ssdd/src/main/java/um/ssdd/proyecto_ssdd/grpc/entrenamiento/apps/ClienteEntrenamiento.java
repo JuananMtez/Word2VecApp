@@ -13,7 +13,6 @@ import um.ssdd.proyecto_ssdd.grpc.entrenamiento.CrearEntrenamientoRequest;
 import um.ssdd.proyecto_ssdd.grpc.entrenamiento.CrearEntrenamientoResponse;
 import um.ssdd.proyecto_ssdd.grpc.entrenamiento.Entrenamiento;
 import um.ssdd.proyecto_ssdd.grpc.entrenamiento.EntrenamientoServiceGrpc;
-import um.ssdd.proyecto_ssdd.kafka.entrenamiento.ProductorEntrenamiento;
 
 public class ClienteEntrenamiento extends Thread
 {
@@ -22,7 +21,7 @@ public class ClienteEntrenamiento extends Thread
     private final ManagedChannel channel;
     private final EntrenamientoServiceGrpc.EntrenamientoServiceStub asyncStub;
     private final String idFichero;
-    private final ProductorEntrenamiento productor;
+    //private final ProductorEntrenamiento productor;
     
     public ClienteEntrenamiento(String host, int port, String fid)
     {
@@ -33,7 +32,7 @@ public class ClienteEntrenamiento extends Thread
     	
     	idFichero = fid;
     	
-    	productor = new ProductorEntrenamiento("w2vec");
+    	//productor = new ProductorEntrenamiento("w2vec");
     }
     
     public void shutdown() throws InterruptedException
@@ -52,9 +51,9 @@ public class ClienteEntrenamiento extends Thread
     																				   .setEntrenamiento(entrenamientoCreado)
     																				   .build();
     	
-    	productor.EnviarMensaje(crearEntrenamientoRequest);
+    	//productor.EnviarMensaje(crearEntrenamientoRequest);
     	
-    	/*try
+    	try
     	{
     		final CountDownLatch finishLatch = new CountDownLatch(1);
     		
@@ -95,7 +94,7 @@ public class ClienteEntrenamiento extends Thread
         } catch (InterruptedException e)
         {
             e.printStackTrace();
-        }*/
+        }
     }
     
     public void run()
