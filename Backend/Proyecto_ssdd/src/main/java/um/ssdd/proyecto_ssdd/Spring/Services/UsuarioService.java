@@ -54,6 +54,16 @@ public class UsuarioService {
 		return null;
 
 	}
+	
+	public UsuarioResponse getEmail(String email) {
+
+		Usuario usuario = usuarioRepository.findByEmail(email);
+		
+		if (usuario != null)
+			return entityToResponse(usuario);
+		return null;
+
+	}
 
 	public UsuarioResponse post(UsuarioPost usuario) {
 

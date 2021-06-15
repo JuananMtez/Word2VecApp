@@ -61,6 +61,20 @@ public class Controller {
 
 		return ResponseEntity.notFound().build();
 	}
+	
+	
+	@GetMapping("/email/{email}")
+	public ResponseEntity<UsuarioResponse> getUsuarioEmail(@PathVariable("email") String email) {
+
+		UsuarioResponse u = usuarioService.getEmail(email);
+
+		if (u != null)
+			return ResponseEntity.ok(u);
+
+		return ResponseEntity.notFound().build();
+	}
+	
+	
 
 	@PostMapping
 	public ResponseEntity<UsuarioResponse> postUsuario(@RequestBody UsuarioPost usuario) {
