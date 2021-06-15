@@ -41,7 +41,7 @@ export class AuthenticationService {
       }))
 
     } else {
-
+      
       alert("Para loguearse, primero debe desloguearse");
     }
   }

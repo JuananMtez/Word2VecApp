@@ -4,9 +4,9 @@ export class CodigoDTO {
   correoElectronico: string;
 
   constructor(email:string) {
-
     this.codigoConfirmacion = "";
     this.correoElectronico = email;
   }
-
 }
+
+

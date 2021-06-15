@@ -4,3 +4,4 @@ export interface LoginDTO {
   password: String;
 
 }
+
