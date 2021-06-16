@@ -6,7 +6,7 @@
           {{user}}
         </a>
         <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="/usuario/perfil">Perfil</a>
+          <a class="dropdown-item" routerLink="/usuario/perfil">Perfil</a>
           <a (click)="logout()" class="dropdown-item">Logout</a>
         </div>
       </li>
@@ -15,7 +15,7 @@
   </div>
 
   <div class="mx-auto order-0">
-      <a class="navbar-brand mx-auto" style="font-size: 25px" href="/inicio">Word2Vec</a>
+      <a class="navbar-brand mx-auto" style="font-size: 25px" routerLink="/inicio">Word2Vec</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
           <span class="navbar-toggler-icon"></span>
       </button>
@@ -24,7 +24,7 @@
   <div *ngIf="isUserLoged()" class="navbar-collapse collapse w-100 order-3 dual-collapse2">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item mr-5">
-        <a class="nav-link" href="/ficheros/listar">Ficheros</a>
+        <a class="nav-link" routerLink="/ficheros/listar">Ficheros</a>
       </li>
       <li class="nav-item ">
         <a routerLink="/entrenamientos/listar" class="nav-link">Entrenamientos</a>

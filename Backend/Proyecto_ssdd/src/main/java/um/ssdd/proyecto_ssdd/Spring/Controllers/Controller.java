@@ -30,7 +30,7 @@ import um.ssdd.proyecto_ssdd.Spring.Services.EntrenamientoService;
 import um.ssdd.proyecto_ssdd.Spring.Services.FicheroService;
 import um.ssdd.proyecto_ssdd.Spring.Services.UsuarioService;
 
-@CrossOrigin(origins = "http://localhost:4200", maxAge = 3600)
+@CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
 @RequestMapping("/api/usuarios")
 public class Controller {
