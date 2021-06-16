@@ -63,6 +63,8 @@ public class ServidorEntrenamiento
     	final ServidorEntrenamiento server = new ServidorEntrenamiento();
         server.start();
         server.blockUntilShutdown();
+    }
+    
         /*if (args.length < 1)
         {
             System.out.println("Usage: consumer <topic>");
@@ -147,5 +149,5 @@ public class ServidorEntrenamiento
                     
             }
         }*/
-    }
+    //}
 }

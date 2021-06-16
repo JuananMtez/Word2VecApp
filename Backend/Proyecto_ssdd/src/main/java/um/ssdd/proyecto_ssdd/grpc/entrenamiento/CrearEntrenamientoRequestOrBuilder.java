@@ -22,3 +22,4 @@ public interface CrearEntrenamientoRequestOrBuilder extends
    */
   um.ssdd.proyecto_ssdd.grpc.entrenamiento.EntrenamientoOrBuilder getEntrenamientoOrBuilder();
 }
+
